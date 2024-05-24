@@ -19,7 +19,7 @@ https://www.igus.eu/info/company-terms-and-conditions-de#section_15
 Item® parts:
 https://pl.item24.com/en/terms-and-conditions/
 
-Autodesk Inventor Content Center files can have their license.
+Autodesk Inventor Content Center files can have their own license.
 
 ## Acknowledgments
 
