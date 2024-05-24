@@ -2,6 +2,10 @@
 
 Master's degree project.
 
+<p align="center">
+    <img src="img.png" width="400"/>
+</p>
+
 ## Contents
 1. digitalTwin - FreeCAD project containing simplified models of robots with calculations,
 2. documentation - 2D documentation of robots,
