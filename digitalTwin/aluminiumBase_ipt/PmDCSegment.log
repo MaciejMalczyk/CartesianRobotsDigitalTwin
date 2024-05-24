@@ -1,0 +1,418 @@
+[2020]
+(0001): Document  u32_0=0040 uid_0={AE26AC2D-CD33-11D3-B589-00902707C6F2}  a0=(0000,0000,0000)        u32_1=8000004B  u32_2=0001   segName="PmBRepSegment" f64_0=1 
+	next = (0002): Label a0=(0000,0000)    index=0002  uid={00000000-0000-0000-0000-000000000000}
+		*participants[0000] = (0009): BodiesFolder 'Solid Bodies'
+		*participants[0001] = (000A): BodiesFolder 'Surface Bodies'
+		*participants[0002] = (000B): BrowserFolder 'Origin'
+		*participants[0003] = (000C): FxExtrude 'Wyciągnięcie proste1'
+		*participants[0004] = (000D): EndOfFeatures
+	component = (0003): PartComponent  a0=(100,000)    a1=(0001,0004) index=005B u32_0=000E lst1={{12115D87-4545-5E57-FD74-BAA2FC39CF26}:0001,{0CA91131-11D0-838B-0008-19B00524DC09}:0001,{90874D11-11D0-D1F8-0008-CABC0663DC09}:0001}    
+		objects[0000] = (000D): EndOfFeatures  flags=2200  index=0001 s32_0=-1
+			next = (0055): Label a0=(0000,0000)    index=FFFFFFFF  uid={00000000-0000-0000-0000-000000000000}
+		objects[0001] = (0008): SurfaceBody  flags=3004200  index=0002 
+			next = (0050): Label 'Bryła1' a0=(0000,0000)    index=000D  uid={00000000-0000-0000-0000-000000000000}
+				next = (0079): 07AB2269 u32_0=0000 u32_1=0000   u32_2=0000 uid={08AD99C8-C6D8-4FC8-ACE8-A24A97A6993B}
+					*surface = (0008): SurfaceBody 'Bryła1'
+			*ref_0 = (0004): NameTable
+		objects[0002] = (000B): BrowserFolder 'Origin'  flags=0200  index=0003
+			next = (0053): Label 'Origin' a0=(0000,0000)    index=000A  uid={00000000-0000-0000-0000-000000000000}
+				*participants[0000] = (000E): Plane 'YZ Plane'
+				*participants[0001] = (000F): Plane 'XZ Plane'
+				*participants[0002] = (0010): Plane 'XY Plane'
+				*participants[0003] = (0011): Line3D (-1,0,0)-(1,0,0)
+				*participants[0004] = (0012): Line3D (0,-1,0)-(0,1,0)
+				*participants[0005] = (0013): Line3D (0,0,-1)-(0,0,1)
+				*participants[0006] = (0014): Point3D - (0,0,0)
+		objects[0003] = (000E): Plane 'YZ Plane'  flags=20200  index=0004 flags2=428000   u32_1=0203 u32_2=0000 center=Vector (0.0, 0.0, 0.0) a1=Vector (-0.0, 1.0, 0.0) normal=Vector (0.0, -0.0, 1.0)
+			next = (0056): Label 'YZ Plane' a0=(0000,0000)    index=0003  uid={00000000-0000-0000-0000-000000000000}
+		objects[0004] = (000F): Plane 'XZ Plane'  flags=20200  index=0005 flags2=428000   u32_1=0000 center=Vector (0.0, 0.0, 0.0) a1=Vector (-1.0, 0.0, 0.0) normal=Vector (0.0, -0.0, 1.0)
+			next = (0057): Label 'XZ Plane' a0=(0000,0000)    index=0004  uid={00000000-0000-0000-0000-000000000000}
+		objects[0005] = (0010): Plane 'XY Plane'  flags=20200  index=0006 flags2=428000   u32_1=0000 center=Vector (0.0, 0.0, 0.0) a1=Vector (1.0, 0.0, -0.0) normal=Vector (-0.0, 1.0, 0.0)
+			next = (0058): Label 'XY Plane' a0=(0000,0000)    index=0005  uid={00000000-0000-0000-0000-000000000000}
+		objects[0006] = (0011): Line3D  flags=20200  index=0007 flags2=424000    pos=Vector (-1.0, 0.0, 0.0) dir=Vector (2.0, 0.0, 0.0) u8_0=00
+			next = (0059): Label 'X Axis' a0=(0000,0000)    index=0006  uid={00000000-0000-0000-0000-000000000000}
+		objects[0007] = (0012): Line3D  flags=20200  index=0008 flags2=424000    pos=Vector (0.0, -1.0, 0.0) dir=Vector (0.0, 2.0, 0.0) u8_0=00
+			next = (005A): Label 'Y Axis' a0=(0000,0000)    index=0007  uid={00000000-0000-0000-0000-000000000000}
+		objects[0008] = (0013): Line3D  flags=20200  index=0009 flags2=424000    pos=Vector (0.0, 0.0, -1.0) dir=Vector (0.0, 0.0, 2.0) u8_0=00
+			next = (005B): Label 'Z Axis' a0=(0000,0000)    index=0008  uid={00000000-0000-0000-0000-000000000000}
+		objects[0009] = (0014): Point3D  flags=20200  index=000A flags2=22000   pos=Vector (0.0, 0.0, 0.0)   
+			next = (005C): Label 'Center Point' a0=(0000,0000)    index=0009  uid={00000000-0000-0000-0000-000000000000}
+		objects[000A] = (000A): BodiesFolder 'Surface Bodies'  flags=0200  index=000B u16_0=001
+			next = (0052): Label 'Surface Bodies' a0=(0000,0000)    index=0002  uid={00000000-0000-0000-0000-000000000000}
+		objects[000B] = (0009): BodiesFolder 'Solid Bodies'  flags=0200  index=000C u16_0=000
+			next = (0051): Label 'Solid Bodies' a0=(0000,0000)    index=0001  uid={00000000-0000-0000-0000-000000000000}
+				*participants[0000] = (0008): SurfaceBody 'Bryła1'
+		objects[000C] = (0015): Transformation  flags=1020200  index=000D transformation= transformation={a0=|-000|00+0|0+00|000+| m=[[-1, 0, 0, 0],[0, 0, 1, 0],[0, 1, 0, 0],[0, 0, 0, 10]]}
+		objects[000D] = (0016): Sketch2D  flags=400200  index=000E s32_0=3 numEntities=000C    a0=(0000,DA5DB218) 
+			next = (005D): Label 'Szkic1' a0=(0000,0000)    index=000B  uid={00000000-0000-0000-0000-000000000000}
+				next = (007B): A917F560 a0=(0000,0000)    
+					*owner = (0016): Sketch2D 'Szkic1'
+					next = (0092): A9F6B271 a0=(0000,0000)    
+						*owner = (0016): Sketch2D 'Szkic1'
+						*participant = (000C): FxExtrude 'Wyciągnięcie proste1'
+					ref_2 = (0093): DBDD00E3 u32_0=0000 numEntities=000C  lst0=[]
+						*sketch = (0016): Sketch2D 'Szkic1'
+			*entities[0000] = (0019): Point2D - (0,0)
+			*entities[0001] = (001B): Point2D - (-50,40)
+			*entities[0002] = (001C): Point2D - (50,-40)
+			*entities[0003] = (001D): Point2D - (50,40)
+			*entities[0004] = (001E): Point2D - (-50,-40)
+			*entities[0005] = (001F): Line2D - (-50,40) - (50,40)
+			*entities[0006] = (0020): Line2D - (50,40) - (50,-40)
+			*entities[0007] = (0021): Line2D - (50,-40) - (-50,-40)
+			*entities[0008] = (0022): Line2D - (-50,-40) - (-50,40)
+			*entities[0009] = (0023): Geometric_Coincident2D - (-50,40)	(001F): Line2D
+			*entities[000A] = (0024): Geometric_Coincident2D - (50,40)	(001F): Line2D
+			*entities[000B] = (0025): Geometric_Coincident2D - (50,40)	(0020): Line2D
+			*entities[000C] = (0026): Geometric_Coincident2D - (50,-40)	(0020): Line2D
+			*entities[000D] = (0027): Geometric_Coincident2D - (50,-40)	(0021): Line2D
+			*entities[000E] = (0028): Geometric_Coincident2D - (-50,-40)	(0021): Line2D
+			*entities[000F] = (0029): Geometric_Coincident2D - (-50,-40)	(0022): Line2D
+			*entities[0010] = (002A): Geometric_Coincident2D - (-50,40)	(0022): Line2D
+			*entities[0011] = (002B): Geometric_Perpendicular2D
+			*entities[0012] = (002C): Geometric_Parallel2D
+			*entities[0013] = (002D): Geometric_Parallel2D
+			*entities[0014] = (002E): Geometric_Horizontal2D
+			*entities[0015] = (002F): Line2D - (-50,40) - (50,-40)
+			*entities[0016] = (0030): Line2D - (50,40) - (-50,-40)
+			*entities[0017] = (0031): Geometric_Coincident2D - (-50,40)	(002F): Line2D
+			*entities[0018] = (0032): Geometric_Coincident2D - (50,-40)	(002F): Line2D
+			*entities[0019] = (0033): Geometric_Coincident2D - (50,40)	(0030): Line2D
+			*entities[001A] = (0034): Geometric_Coincident2D - (-50,-40)	(0030): Line2D
+			*entities[001B] = (0035): Geometric_Coincident2D - (0,0)	(0030): Line2D
+			*entities[001C] = (0036): Geometric_Coincident2D - (0,0)	(002F): Line2D
+			*entities[001D] = (0038): Dimension_Distance2D - d='d0', e1=(0021): Line2D, e2=(001F): Line2D
+			*entities[001E] = (003B): Dimension_Distance2D - d='d1', e1=(0022): Line2D, e2=(0020): Line2D
+			*transformation = (0015): Transformation
+			*direction = (0017): DirectionAxis dir=(0,1,0)
+		objects[000E] = (0017): DirectionAxis  flags=20200  index=000F flags2=0000 a=0 dir=Vector (0.0, 1.0, 0.0)
+		objects[000F] = (0018): Sketch2DPlacementPlane  flags=0200  index=0010 s32_0=-1   a1=(000,000,001,000,000,000,000) 
+			*transformation2 = (0015): Transformation
+			*plane = (000F): Plane 'XZ Plane'
+		objects[0010] = (0019): Point2D  flags=30200  index=0011 flags2=0040  pos=Vector (0.0, 0.0, 0.0)   u32_0=0000 lst1=()  
+			next = (005E): Styles a0=(0000,0000)    u32_0=0000 associativeID=0001 typEntity=0001
+				next = (007C): EntityReference a0=(0000,0000)    
+					*owner = (0019): Point2D - (0,0)
+					next = (0094): C89EF3C0 a0=(0000,0000)    u32_0=0000 pos=Vector (0.0, 0.0, 0.0)
+						*owner = (0019): Point2D - (0,0)
+					*ref_2 = (001A): Representation3DPoint
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*endPointOf[0000] = (002F): Line2D - (-50,40) - (50,-40)
+			*endPointOf[0001] = (0030): Line2D - (50,40) - (-50,-40)
+		objects[0011] = (001A): Representation3DPoint  flags=0200  index=0012 s32_0=-1   
+			*point2D = (0019): Point2D - (0,0)
+			*transformation = (0015): Transformation
+			*point3D = (0014): Point3D - (0,0,0)
+		objects[0012] = (001B): Point2D  flags=20200  index=0013 flags2=0000  pos=Vector (-49.99999999999999, 40.0, 0.0)   u32_0=0000 lst1=()  
+			next = (005F): Styles a0=(0000,0000)    u32_0=0000 associativeID=0002 typEntity=0001
+				next = (007D): BFD09C43 a0=(0000,0000)     a1=(0,0,0,0) u32_0=0000
+					*owner = (001B): Point2D - (-50,40)
+					*entity2 = (001B): Point2D - (-50,40)
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*endPointOf[0000] = (001F): Line2D - (-50,40) - (50,40)
+			*endPointOf[0001] = (0022): Line2D - (-50,-40) - (-50,40)
+			*endPointOf[0002] = (002F): Line2D - (-50,40) - (50,-40)
+		objects[0013] = (001C): Point2D  flags=20200  index=0014 flags2=0000  pos=Vector (49.99999999999999, -39.99999999999999, 0.0)   u32_0=0000 lst1=()  
+			next = (0060): Styles a0=(0000,0000)    u32_0=0000 associativeID=0003 typEntity=0001
+				next = (007E): BFD09C43 a0=(0000,0000)     a1=(0,0,0,0) u32_0=0000
+					*owner = (001C): Point2D - (50,-40)
+					*entity2 = (001C): Point2D - (50,-40)
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*endPointOf[0000] = (0020): Line2D - (50,40) - (50,-40)
+			*endPointOf[0001] = (0021): Line2D - (50,-40) - (-50,-40)
+			*endPointOf[0002] = (002F): Line2D - (-50,40) - (50,-40)
+		objects[0014] = (001D): Point2D  flags=20200  index=0015 flags2=0000  pos=Vector (50.0, 40.0, 0.0)   u32_0=0000 lst1=()  
+			next = (0061): Styles a0=(0000,0000)    u32_0=0000 associativeID=0004 typEntity=0001
+				next = (007F): BFD09C43 a0=(0000,0000)     a1=(0,0,0,0) u32_0=0000
+					*owner = (001D): Point2D - (50,40)
+					*entity2 = (001D): Point2D - (50,40)
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*endPointOf[0000] = (001F): Line2D - (-50,40) - (50,40)
+			*endPointOf[0001] = (0020): Line2D - (50,40) - (50,-40)
+			*endPointOf[0002] = (0030): Line2D - (50,40) - (-50,-40)
+		objects[0015] = (001E): Point2D  flags=20200  index=0016 flags2=0000  pos=Vector (-50.00000000000002, -40.00000000000001, 0.0)   u32_0=0000 lst1=()  
+			next = (0062): Styles a0=(0000,0000)    u32_0=0000 associativeID=0005 typEntity=0001
+				next = (0080): BFD09C43 a0=(0000,0000)     a1=(0,0,0,0) u32_0=0000
+					*owner = (001E): Point2D - (-50,-40)
+					*entity2 = (001E): Point2D - (-50,-40)
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*endPointOf[0000] = (0021): Line2D - (50,-40) - (-50,-40)
+			*endPointOf[0001] = (0022): Line2D - (-50,-40) - (-50,40)
+			*endPointOf[0002] = (0030): Line2D - (50,40) - (-50,-40)
+		objects[0016] = (001F): Line2D  flags=20200  index=0017 flags2=0000   pos=Vector (0.0, 40.0, 0.0) dir=Vector (1.0, 0.0, 0.0)
+			next = (0063): Styles a0=(0000,0000)    u32_0=0000 associativeID=0006 typEntity=0002
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*points[0000] = (001B): Point2D - (-50,40)
+			*points[0001] = (001D): Point2D - (50,40)
+		objects[0017] = (0020): Line2D  flags=20200  index=0018 flags2=0000   pos=Vector (49.99999999999999, -3.662436706214492e-14, 0.0) dir=Vector (-1.8369701987210294e-16, -1.0, 0.0)
+			next = (0064): Styles a0=(0000,0000)    u32_0=0000 associativeID=0007 typEntity=0002
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*points[0000] = (001D): Point2D - (50,40)
+			*points[0001] = (001C): Point2D - (50,-40)
+		objects[0018] = (0021): Line2D  flags=20200  index=0019 flags2=0000   pos=Vector (-2.160355120442882, -40.0, 0.0) dir=Vector (-1.0, -1.2246467991473535e-16, 0.0)
+			next = (0065): Styles a0=(0000,0000)    u32_0=0000 associativeID=0008 typEntity=0002
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*points[0000] = (001C): Point2D - (50,-40)
+			*points[0001] = (001E): Point2D - (-50,-40)
+		objects[0019] = (0022): Line2D  flags=20200  index=001A flags2=0000   pos=Vector (-50.00000000000001, -6.008197083461093e-15, 0.0) dir=Vector (3.0616169978683826e-16, 1.0, 0.0)
+			next = (0066): Styles a0=(0000,0000)    u32_0=0000 associativeID=0009 typEntity=0002
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*points[0000] = (001E): Point2D - (-50,-40)
+			*points[0001] = (001B): Point2D - (-50,40)
+		objects[001A] = (0023): Geometric_Coincident2D  flags=4208  index=001B flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (001F): Line2D - (-50,40) - (50,40)
+			*entity2 = (001B): Point2D - (-50,40)
+		objects[001B] = (0024): Geometric_Coincident2D  flags=4208  index=001C flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (001F): Line2D - (-50,40) - (50,40)
+			*entity2 = (001D): Point2D - (50,40)
+		objects[001C] = (0025): Geometric_Coincident2D  flags=4208  index=001D flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0020): Line2D - (50,40) - (50,-40)
+			*entity2 = (001D): Point2D - (50,40)
+		objects[001D] = (0026): Geometric_Coincident2D  flags=4208  index=001E flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0020): Line2D - (50,40) - (50,-40)
+			*entity2 = (001C): Point2D - (50,-40)
+		objects[001E] = (0027): Geometric_Coincident2D  flags=4208  index=001F flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0021): Line2D - (50,-40) - (-50,-40)
+			*entity2 = (001C): Point2D - (50,-40)
+		objects[001F] = (0028): Geometric_Coincident2D  flags=4208  index=0020 flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0021): Line2D - (50,-40) - (-50,-40)
+			*entity2 = (001E): Point2D - (-50,-40)
+		objects[0020] = (0029): Geometric_Coincident2D  flags=4208  index=0021 flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0022): Line2D - (-50,-40) - (-50,40)
+			*entity2 = (001E): Point2D - (-50,-40)
+		objects[0021] = (002A): Geometric_Coincident2D  flags=4208  index=0022 flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0022): Line2D - (-50,-40) - (-50,40)
+			*entity2 = (001B): Point2D - (-50,40)
+		objects[0022] = (002B): Geometric_Perpendicular2D  flags=4208  index=0023 flags2=-1  lst0={}     u16_0=000
+			*group = (0039): Group2D
+			*line1 = (001F): Line2D - (-50,40) - (50,40)
+			*line2 = (0020): Line2D - (50,40) - (50,-40)
+		objects[0023] = (002C): Geometric_Parallel2D  flags=4208  index=0024 flags2=-1  lst0={}     u16_0=000
+			*group = (0039): Group2D
+			*line1 = (001F): Line2D - (-50,40) - (50,40)
+			*line2 = (0021): Line2D - (50,-40) - (-50,-40)
+		objects[0024] = (002D): Geometric_Parallel2D  flags=4208  index=0025 flags2=-1  lst0={}     u16_0=000
+			*group = (0039): Group2D
+			*line1 = (0020): Line2D - (50,40) - (50,-40)
+			*line2 = (0022): Line2D - (-50,-40) - (-50,40)
+		objects[0025] = (002E): Geometric_Horizontal2D  flags=4208  index=0026 flags2=-1  lst0={}    u8_0=00
+			*group = (0039): Group2D
+			*line = (001F): Line2D - (-50,40) - (50,40)
+		objects[0026] = (002F): Line2D  flags=20200  index=0027 flags2=80000   pos=Vector (1.3058849263467613, -1.0447079410774065, 0.0) dir=Vector (0.7808688094430303, -0.6246950475544243, 0.0)
+			next = (0067): Styles a0=(0000,0000)    u32_0=0000 associativeID=000A typEntity=0002
+				next = (0081): BFD09C43 a0=(0000,0000)     a1=(0,0,0,0) u32_0=0000
+					*owner = (002F): Line2D - (-50,40) - (50,-40)
+					*entity2 = (002F): Line2D - (-50,40) - (50,-40)
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*points[0000] = (001B): Point2D - (-50,40)
+			*points[0001] = (001C): Point2D - (50,-40)
+			*points[0002] = (0019): Point2D - (0,0)
+		objects[0027] = (0030): Line2D  flags=20200  index=0028 flags2=80000   pos=Vector (1.3058849263467998, 1.044707941077442, 0.0) dir=Vector (-0.7808688094430304, -0.6246950475544243, 0.0)
+			next = (0068): Styles a0=(0000,0000)    u32_0=0000 associativeID=000B typEntity=0002
+				next = (0082): BFD09C43 a0=(0000,0000)     a1=(0,0,0,0) u32_0=0000
+					*owner = (0030): Line2D - (50,40) - (-50,-40)
+					*entity2 = (0030): Line2D - (50,40) - (-50,-40)
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*points[0000] = (001D): Point2D - (50,40)
+			*points[0001] = (001E): Point2D - (-50,-40)
+			*points[0002] = (0019): Point2D - (0,0)
+		objects[0028] = (0031): Geometric_Coincident2D  flags=4208  index=0029 flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (002F): Line2D - (-50,40) - (50,-40)
+			*entity2 = (001B): Point2D - (-50,40)
+		objects[0029] = (0032): Geometric_Coincident2D  flags=4208  index=002A flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (002F): Line2D - (-50,40) - (50,-40)
+			*entity2 = (001C): Point2D - (50,-40)
+		objects[002A] = (0033): Geometric_Coincident2D  flags=4208  index=002B flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0030): Line2D - (50,40) - (-50,-40)
+			*entity2 = (001D): Point2D - (50,40)
+		objects[002B] = (0034): Geometric_Coincident2D  flags=4208  index=002C flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0030): Line2D - (50,40) - (-50,-40)
+			*entity2 = (001E): Point2D - (-50,-40)
+		objects[002C] = (0035): Geometric_Coincident2D  flags=4208  index=002D flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0019): Point2D - (0,0)
+			*entity2 = (0030): Line2D - (50,40) - (-50,-40)
+		objects[002D] = (0036): Geometric_Coincident2D  flags=4208  index=002E flags2=-1  lst0={}    
+			*group = (0039): Group2D
+			*entity1 = (0019): Point2D - (0,0)
+			*entity2 = (002F): Line2D - (-50,40) - (50,-40)
+		objects[002E] = (0037): Parameter 'd0'  flags=34200  index=0030   valueNominal=80 valueModel=80   tolerance=NOMINAL u16_0=-1
+			unit = (0069): Unit   visible=True 
+				numerators[0000] = (0083): UnitMilliMeter magnitude=1 factor=1 Unit="mm" UnitOffset=0 UnitFactor=0.1 UnitSupportet=True
+			formula = (006A): ParameterValue  value=80 type=000
+				unit = (0084): Unit   visible=True 
+					numerators[0000] = (0095): UnitMeter magnitude=0.001 factor=1 Unit="m" UnitOffset=0 UnitFactor=100 UnitSupportet=True
+		objects[002F] = (0038): Dimension_Distance2D  flags=4208  index=0031 flags2=-1  lst0={}   u32_0=0000   a0=(0000,0000,0000,0000) a1=Vector (1.7976931348623157e+308, 0.0, 0.0) a2=Vector (1.7976931348623157e+308, 0.0, 0.0)
+			next = (006B): EEE03AF5 a0=(0000,0000)     u16_0=006   u32_0=0000 a1=Vector (0.0, 1.0, 0.0) p1=Vector (49.99999999999999, -39.99999999999999, 0.0) p2=Vector (50.00000000000001, 40.0, 0.0) a2=Vector (80.0, 119.58398175579461, 0.0)
+				entity2 = (0085): E1D3D023  flags=3000200  index=0000 flags2=0000  a1=(0,0,1.875) a2=(100,000,000) a3=Vector (49.99999999999999, -39.99999999999999, 0.0) a4=(001,000,000) a5=Vector (8.131e-320, 8.1284e-320, 0.0) a6=(000,003,000) s32_0=-1 a7=(-1,-1.22465e-16,0,-1.22465e-16,1,0,0,169.584,-87.9153,0,169.584,2.05466e-14,0,179.471,-40,0,179.471,40,0,50,-40,0,50,40,0,169.584,-40,0,169.584,40,0) a8=(01,01,00,00,00,00,00,00,00,00,00,00,00,03,00,00,01,00) a9=(0,9.88665,2.47166,3.52047,1.63478,0) u8_0=01   a10=(0000,0000,006A) a11=(169.584,-40,0,169.584,40,0,169.584,-40,0,169.584,40,0,169.584,-87.9153,0,0,0,0) u8_1=01 a12=(-1,-1.22465e-16,0,169.584,2.05466e-14,0,0,1,0,169.584,-87.9153,0) u8_2=00 a13=(52.4717,-40,0,52.4717,40,0) 
+					ref_1 = (0096): 39A41830  flags=0210  index=0000 s32_0=-1 a2=(0000,0000,0000,0000,0000,0000,0000,0000,0000,0001,0000,0000,0003) a3=Vector (0.0, 0.0, 0.0) txt0="" a4=(0000,0000,0000,A7F9,A7FB) a5=(1,0,0,169.584,-87.9153,0) a6=(000,000,000,000,000,000)   u32_0=0000 a7=(0003,0003) a8=(07E4,0000) 
+						*parameter1 = (0037): Parameter 'd0'=800mm
+						*sketch = (0016): Sketch2D 'Szkic1'
+					ref_2 = (0097): 99B938AE  flags=0200  index=0000 a1=Vector (0.25, 0.1, 0.0) u32_0=0010 u32_1=0000
+					*ref_3 = (0097): 99B938AE
+				*entity3 = (0021): Line2D - (50,-40) - (-50,-40)
+				*entity4 = (001F): Line2D - (-50,40) - (50,40)
+			*group = (0039): Group2D
+			*parameter = (0037): Parameter 'd0'=800mm
+			*entity1 = (0021): Line2D - (50,-40) - (-50,-40)
+			*entity2 = (001F): Line2D - (-50,40) - (50,40)
+		objects[0030] = (0039): Group2D  flags=0200  index=0044 s32_0=-1 s32_1=20  entries={80000019:0004,8000001B:0000,8000001C:0000,8000001D:0000,8000001E:0000,8000001F:0000,80000020:0000,80000021:0000,80000022:0000,80000023:0000,80000024:0000,80000025:0000,80000026:0000,80000027:0000,80000028:0000,80000029:0000,8000002A:0000,8000002B:0000,8000002C:0000,8000002D:0000,8000002E:0000,8000002F:0000,80000030:0000,80000031:0000,80000032:0000,80000033:0000,80000034:0000,80000035:0000,80000036:0000,80000038:0000,8000003B:0000} u32_0=0000
+			*constrains[0000] = (0023): Geometric_Coincident2D - (-50,40)	(001F): Line2D
+			*constrains[0001] = (0038): Dimension_Distance2D - d='d0', e1=(0021): Line2D, e2=(001F): Line2D
+			*constrains[0002] = (002E): Geometric_Horizontal2D
+			*constrains[0003] = (002C): Geometric_Parallel2D
+			*constrains[0004] = (002B): Geometric_Perpendicular2D
+			*constrains[0005] = (0024): Geometric_Coincident2D - (50,40)	(001F): Line2D
+			*constrains[0006] = (0031): Geometric_Coincident2D - (-50,40)	(002F): Line2D
+			*constrains[0007] = (002A): Geometric_Coincident2D - (-50,40)	(0022): Line2D
+			*constrains[0008] = (0028): Geometric_Coincident2D - (-50,-40)	(0021): Line2D
+			*constrains[0009] = (0027): Geometric_Coincident2D - (50,-40)	(0021): Line2D
+			*constrains[000A] = (002D): Geometric_Parallel2D
+			*constrains[000B] = (0026): Geometric_Coincident2D - (50,-40)	(0020): Line2D
+			*constrains[000C] = (0025): Geometric_Coincident2D - (50,40)	(0020): Line2D
+			*constrains[000D] = (0033): Geometric_Coincident2D - (50,40)	(0030): Line2D
+			*constrains[000E] = (0036): Geometric_Coincident2D - (0,0)	(002F): Line2D
+			*constrains[000F] = (0032): Geometric_Coincident2D - (50,-40)	(002F): Line2D
+			*constrains[0010] = (0029): Geometric_Coincident2D - (-50,-40)	(0022): Line2D
+			*constrains[0011] = (0034): Geometric_Coincident2D - (-50,-40)	(0030): Line2D
+			*constrains[0012] = (0035): Geometric_Coincident2D - (0,0)	(0030): Line2D
+			*constrains[0013] = (003B): Dimension_Distance2D - d='d1', e1=(0022): Line2D, e2=(0020): Line2D
+		objects[0031] = (003A): Parameter 'd1'  flags=34200  index=0045   valueNominal=100 valueModel=100   tolerance=NOMINAL u16_0=-1
+			unit = (006C): Unit   visible=True 
+				numerators[0000] = (0086): UnitMilliMeter magnitude=1 factor=1 Unit="mm" UnitOffset=0 UnitFactor=0.1 UnitSupportet=True
+			formula = (006D): ParameterValue  value=100 type=000
+				unit = (0087): Unit   visible=True 
+					numerators[0000] = (0098): UnitMeter magnitude=0.001 factor=1 Unit="m" UnitOffset=0 UnitFactor=100 UnitSupportet=True
+		objects[0032] = (003B): Dimension_Distance2D  flags=4208  index=0046 flags2=-1  lst0={}   u32_0=0000   a0=(0000,0000,0000,0000) a1=Vector (1.7976931348623157e+308, 0.0, 0.0) a2=Vector (1.7976931348623157e+308, 0.0, 0.0)
+			next = (006E): EEE03AF5 a0=(0000,0000)     u16_0=006   u32_0=0000 a1=Vector (0.0, 1.0, 0.0) p1=Vector (-50.00000000000002, -40.00000000000001, 0.0) p2=Vector (49.99999999999999, -40.0, 0.0) a2=Vector (100.00000000000001, 72.13789154248093, 0.0)
+				entity2 = (0088): E1D3D023  flags=3000200  index=0000 flags2=0000  a1=(0,0,1.875) a2=(100,000,000) a3=Vector (-50.00000000000002, -40.00000000000001, 0.0) a4=(FFFF,FFFF,FFFF) a5=Vector (8.1303e-320, 2.4318e-319, 0.0) a6=(000,003,000) s32_0=-1 a7=(3.06162e-16,1,0,1,-3.06162e-16,0,0,-21.5889,-112.138,0,-3.98394e-14,-112.138,0,-50,-117.457,0,50,-117.457,0,-50,-40,0,50,-40,0,-50,-112.138,0,50,-112.138,0) a8=(01,01,00,00,00,00,00,00,00,00,00,00,00,03,00,00,01,00) a9=(0,5.31912,1.32978,4.69396,1.62844,0) u8_0=01   a10=(0000,0000,006A) a11=(-50,-112.138,0,50,-112.138,0,-50,-112.138,0,50,-112.138,0,-21.5889,-112.138,0,0,0,0) u8_1=01 a12=(3.06162e-16,1,0,-3.98394e-14,-112.138,0,1,0,0,0,0,0) u8_2=00 a13=(-50,-41.3298,0,50,-41.3298,0) 
+					ref_1 = (0099): 39A41830  flags=0210  index=0000 s32_0=-1 a2=(0000,0000,0000,0000,0000,0000,0000,0000,0000,0001,0000,0000,0003) a3=Vector (0.0, 0.0, 0.0) txt0="" a4=(0000,0000,0000,A7F9,A7FB) a5=(1,0,0,-21.5889,-112.138,0) a6=(000,000,000,000,000,000)   u32_0=0000 a7=(0003,0003) a8=(07E4,0000) 
+						*parameter1 = (003A): Parameter 'd1'=1000mm
+						*sketch = (0016): Sketch2D 'Szkic1'
+					ref_2 = (009A): 99B938AE  flags=0200  index=0000 a1=Vector (0.25, 0.1, 0.0) u32_0=0010 u32_1=0000
+					*ref_3 = (009A): 99B938AE
+				*entity3 = (0022): Line2D - (-50,-40) - (-50,40)
+				*entity4 = (0020): Line2D - (50,40) - (50,-40)
+			*group = (0039): Group2D
+			*parameter = (003A): Parameter 'd1'=1000mm
+			*entity1 = (0022): Line2D - (-50,-40) - (-50,40)
+			*entity2 = (0020): Line2D - (50,40) - (50,-40)
+		objects[0033] = (003C): BoundaryPatch  flags=0200  index=0048  
+			*lst0[0000] = (003E): FaceBoundProxy
+		objects[0034] = (003D): FaceBoundOuter  flags=900200  index=0049 s32_0=2400    a1=(0001,0001)  
+			parts[0000] = (006F): Loop  operation=0008  faceIndex=0000
+				edges[0000] = (0089): SketchEntityRef a0=(0000,0000) u32_0=0000 entityAI=0007 typEntity=0002 u32_1=0000 point1AI=0003 typPt1=0001 u32_2=0000 point2AI=0004 typPt2=0001 posDir=False 
+					*sketch = (0016): Sketch2D 'Szkic1'
+				edges[0001] = (008A): SketchEntityRef a0=(0000,0000) u32_0=0000 entityAI=0006 typEntity=0002 u32_1=0000 point1AI=0004 typPt1=0001 u32_2=0000 point2AI=0002 typPt2=0001 posDir=False 
+					*sketch = (0016): Sketch2D 'Szkic1'
+				edges[0002] = (008B): SketchEntityRef a0=(0000,0000) u32_0=0000 entityAI=0009 typEntity=0002 u32_1=0000 point1AI=0002 typPt1=0001 u32_2=0000 point2AI=0005 typPt2=0001 posDir=False 
+					*sketch = (0016): Sketch2D 'Szkic1'
+				edges[0003] = (008C): SketchEntityRef a0=(0000,0000) u32_0=0000 entityAI=0008 typEntity=0002 u32_1=0000 point1AI=0005 typPt1=0001 u32_2=0000 point2AI=0003 typPt2=0001 posDir=False 
+					*sketch = (0016): Sketch2D 'Szkic1'
+			*sketch = (0016): Sketch2D 'Szkic1'
+			*proxy = (003C): BoundaryPatch
+		objects[0035] = (003E): FaceBoundProxy  flags=A1004200  index=004A  u8_0=00
+			next = (0070): NameTableKeyDef a0=(0000,0000)    ntKey=0000
+			refWrapper = (0071): AsmEntityWrapper index=004A u8_0=04  u32_1=0006
+				*asm = (004F): ASM
+		objects[0036] = (000C): FxExtrude 'Wyciągnięcie proste1'  flags=6200  index=004B s32_0=2400 outlineItem=0000  u32_1=0000
+			next = (0054): Label 'Wyciągnięcie proste1' a0=(0000,0000)    index=000D  uid={0CA91131-11D0-838B-0008-19B00524DC09}
+				next = (007A): A9F6B271 a0=(0000,0000)    
+					*owner = (000C): FxExtrude 'Wyciągnięcie proste1'
+					next = (0091): FeatureDimensionStateAttr a0=(0000,0000)     u16_0=004 u16_1=000 
+						*owner = (000C): FxExtrude 'Wyciągnięcie proste1'
+						next = (009D): FeatureDimensionStateAttr a0=(0000,0000)     u16_0=008 u16_1=001 
+							*owner = (000C): FxExtrude 'Wyciągnięcie proste1'
+							next = (009F): 086E7238 a0=(0000,0000)    txtUID="750F72AD-C960-4A64-B60F-623F6301144E" txt1="Brak ustawienia wstępnego"
+								*owner = (000C): FxExtrude 'Wyciągnięcie proste1'
+							attr = (00A0): AE101F92  flags=37000200  index=0000 u32_0=0000  u32_1=0000 a=1 a2=(101,000,000) a3=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0) a4=(0000,0000,0000) a5=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.125,0) u8_0=00 a6=(000,0FC,000,000,000,100) a7=(0,0,0,0)   a8=(0,0,0,0,0,0) a9=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0) u16_0=000 a10=(0,0,0,0,0,1,1,0,0,1,0,6.28319,0,0,0,0,0,1,1,0,0,1,0,6.28319,0,0,0,0,0,1,1,0,0,1,0,6.28319,0,0,0,0,0,0,0,0,0)
+								ref_2 = (00A3): 99B938B0  flags=0200  index=0000 s32_0=-1 a0=(0000,0000,0000,0000,0000,0000,0000,0000,0000,0001,0000,0000,0003,0000,0000,0000,0000,0000) typ=0000 a1=[] a2=Vector (0.0, 0.0, 0.0) a3=(0002,0002) a4=(1,0,0,0,0,0) a5=(000,000,000,000,000,000)  a6=(0000,0000) a7=(0003,0003) a8=(07E4,0000)
+									*parameter = (0041): Parameter 'd3'=0°
+								ref_3 = (00A4): 99B938AE  flags=0200  index=0000 a1=Vector (0.25, 0.1, 0.0) u32_0=0010 u32_1=0000
+								*ref_4 = (00A4): 99B938AE
+							*fxDims = (0045): FeatureDimensions
+						attr = (009E): E1D3D023  flags=3000200  index=0000 flags2=0000  a1=(0,0,1.875) a2=(101,000,000) a3=Vector (0.0, 0.0, 0.0) a4=(000,000,000) a5=Vector (0.0, 0.0, 0.0) a6=(000,002,000) s32_0=-1 a7=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0) a8=(00,00,00,00,00,00,00,00,00,00,00,00,00,03,00,00,01,00) a9=(0,0.125,0,0,0,0) u8_0=01   a10=(0000,0000,006A) a11=(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0) u8_1=01 a12=(0,0,0,0,0,0,1,0,0,0,0,0) u8_2=00 a13=(0,0,0,0,0,0) 
+							ref_1 = (00A1): 99B938B0  flags=0200  index=0000 s32_0=-1 a0=(0000,0000,0000,0000,0000,0000,0000,0000,0000,0001,0000,0000,0003,0000,0000,0000,0000,0000) typ=0000 a1=[] a2=Vector (0.0, 0.0, 0.0) a3=(0002,0002) a4=(1,0,0,0,0,0) a5=(000,000,000,000,000,000)  a6=(0000,0000) a7=(0003,0003) a8=(07E4,0000)
+								*parameter = (0040): Parameter 'd2'=3mm
+							ref_2 = (00A2): 99B938AE  flags=0200  index=0000 a1=Vector (0.25, 0.1, 0.0) u32_0=0010 u32_1=0000
+							*ref_3 = (00A2): 99B938AE
+						*fxDims = (0045): FeatureDimensions
+					*participant = (0016): Sketch2D 'Szkic1'
+				*participants[0000] = (0016): Sketch2D 'Szkic1'
+			*properties[0000] = (003F): PartFeatureOperation='NewBody'
+			*properties[0001] = (003C): BoundaryPatch
+			*properties[0002] = (0017): DirectionAxis dir=(0,1,0)
+			*properties[0003] = (0042): Boolean=(False, 0)
+			*properties[0004] = (0040): Parameter 'd2'=3mm
+			*properties[0005] = (0041): Parameter 'd3'=0°
+			*properties[0006] = (0043): ExtentType='Dimension'
+			*properties[0007] = (0044): Boolean=(False, 0)
+			*properties[000F] = (0045): FeatureDimensions
+			*properties[0013] = (0046): Parameter 'RDxVar0'=1
+			*properties[0014] = (0047): Boolean=(False, 0)
+			*properties[0015] = (0048): CEFD3973_Enum=0
+			*properties[0016] = (0049): Boolean=(True, 0)
+			*properties[0017] = (003C): BoundaryPatch
+			*properties[001A] = (004A): ObjectCollection 'Bryła1'
+		objects[0037] = (003F): Enum PartFeatureOperation  flags=20200  index=004C type=5   value=NewBody
+		objects[0038] = (0040): Parameter 'd2'  flags=34200  index=004D   valueNominal=0.3 valueModel=0.3   tolerance=NOMINAL u16_0=-1
+			unit = (0072): Unit   visible=True 
+				numerators[0000] = (008D): UnitMilliMeter magnitude=1 factor=1 Unit="mm" UnitOffset=0 UnitFactor=0.1 UnitSupportet=True
+			formula = (0073): ParameterValue  value=0.3 type=000
+				unit = (008E): Unit   visible=True 
+					numerators[0000] = (009B): UnitMeter magnitude=0.001 factor=1 Unit="m" UnitOffset=0 UnitFactor=100 UnitSupportet=True
+		objects[0039] = (0041): Parameter 'd3'  flags=34200  index=004E   valueNominal=0 valueModel=0   tolerance=NOMINAL u16_0=-1
+			unit = (0074): Unit   visible=True 
+				numerators[0000] = (008F): UnitDegree magnitude=1 factor=1 Unit="°" UnitOffset=0 UnitFactor=0.0174533 UnitSupportet=True
+			formula = (0075): ParameterValue  value=0 type=002
+				unit = (0090): Unit   visible=True 
+					numerators[0000] = (009C): UnitGrad magnitude=1 factor=1 Unit="°" UnitOffset=0 UnitFactor=0.0174533 UnitSupportet=True
+		objects[003A] = (0042): Boolean  flags=8024200  index=004F value=False
+		objects[003B] = (0043): Enum ExtentType  flags=20200  index=0050 type=12   value=Dimension
+		objects[003C] = (0044): Boolean  flags=8024200  index=0051 value=False
+		objects[003D] = (0045): FeatureDimensions  flags=0200  index=0052 
+			fxDimensions[0000] = (0076): FxDimension anchors=[[-7.10543e-15,0,40],[-7.10543e-15,0.3,40]] transformation= transformation={a0=|+00x|0+00|00+x|000+| m=[[1, 0, 0, 0],[0, 1, 0, 0],[0, 0, 1, 400],[0, 0, 0, 10]]} u8_0=00 
+				*parameter = (0040): Parameter 'd2'=3mm
+			fxDimensions[0001] = (0077): FxDimension anchors=[[-50,0.3015,40],[-50,0.3,40],[-50,0.30075,40],[-50,0.3015,40],[-50,0.3015,40]] transformation= transformation={a0=|00-x|-000|0+0x|000+| m=[[0, 0, -1, -500],[-1, 0, 0, 0],[0, 1, 0, 400],[0, 0, 0, 10]]} u8_0=01 
+				*parameter = (0041): Parameter 'd3'=0°
+		objects[003E] = (0046): Parameter 'RDxVar0'  flags=8024200  index=0053 valueNominal=0001 valueModel=0001
+		objects[003F] = (0047): Boolean  flags=8024200  index=0054 value=False
+		objects[0040] = (0048): Enum CEFD3973_Enum  flags=20200  index=0055 type=4   value=0
+		objects[0041] = (0049): Boolean  flags=8024200  index=0056 value=True
+		objects[0042] = (004A): ObjectCollection  flags=0000  index=0057  
+			*items[0000] = (0008): SurfaceBody 'Bryła1'
+		objects[0043] = (004B): ObjectCollectionDef  flags=0200  index=0058 s32_0=-1  
+			*items[0000] = (004C): BodyCollection 'Bryła1'
+			*collection = (004A): ObjectCollection 'Bryła1'
+		objects[0044] = (004C): BodyCollection  flags=0200  index=0059 
+			*items[0000] = (0008): SurfaceBody 'Bryła1'
+		objects[0045] = (004D): A31E29E0  flags=0200  index=005A s32_0=-1   
+			lst0[0000] = (0078): 845212C7 u32_0=0000  u32_1=0002
+				*component = (0003): PartComponent
+			*owner = (000C): FxExtrude 'Wyciągnięcie proste1'
+			*body = (004C): BodyCollection 'Bryła1'
+		*parameters[RDxVar0] = (0046): Parameter 'RDxVar0'=1
+		*parameters[d0] = (0037): Parameter 'd0'=800mm
+		*parameters[d1] = (003A): Parameter 'd1'=1000mm
+		*parameters[d2] = (0040): Parameter 'd2'=3mm
+		*parameters[d3] = (0041): Parameter 'd3'=0°
+	nameTable = (0004): NameTable  lastIdx=0001 
+	display = (0005): DisplayDecimals  u32_0=0000  length=003 angle=002 u16_0=000
+	*ref_3 = (0003): PartComponent
+	faceMerges = (0006): FaceMergeData s32_0=0   lst1=[] lst2=[] lst3=[]
+		nameTable = (004E): NameTable  lastIdx=0000 
+	mdlTxnMgr = (0007): ModelerTxnMgr  flags=0000   u32_0=0002 u32_1=0003 lst_1=[80000003 004B [(0002,01,0002),(0003,00,0000)],80000003 8000004B [(0002,01,0003),(0003,00,0001)]] u32_2=0000
+		asm = (004F): ASM u32_0=0357 schema=002B fmt="ASM BinaryFile4" SAT=<Acis.AcisReader object at 0x7fc484034460> nameMatches={6:[-34 NMx_Generated_Brep_tag-NMx_Brep_Name_tag-NMx_Brep_tag-NamingMatching-attrib $-1 -1 $-1 $-1 $26 43 0 6 0 2 #],9:[-41 NMx_Generated_Brep_tag-NMx_Brep_Name_tag-NMx_Brep_tag-NamingMatching-attrib $-1 -1 $-1 $-1 $32 43 0 9 0 2 #],7:[-44 NMx_Generated_Brep_tag-NMx_Brep_Name_tag-NMx_Brep_tag-NamingMatching-attrib $-1 -1 $-1 $-1 $33 43 0 7 0 2 #],8:[-49 NMx_Generated_Brep_tag-NMx_Brep_Name_tag-NMx_Brep_tag-NamingMatching-attrib $-1 -1 $-1 $-1 $40 43 0 8 0 2 #]} dcAttributes={} selectedKey=8000004F delta_state=4 
+	*ref_4 = (0008): SurfaceBody 'Bryła1'

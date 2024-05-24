@@ -1,0 +1,60 @@
+[2020]
+(0001): Document  u32_0=0040 uid_0={AE26AC2D-CD33-11D3-B589-00902707C6F2}  a0=(0000,0000,0000)        u32_1=8000000F  u32_2=0000   segName="PmBRepSegment" f64_0=1 
+	next = (0002): Label a0=(0000,0000)    index=0002  uid={00000000-0000-0000-0000-000000000000}
+		*participants[0000] = (0008): BodiesFolder 'Solid Bodies'
+		*participants[0001] = (0009): BodiesFolder 'Surface Bodies'
+		*participants[0002] = (000A): BrowserFolder 'Origin'
+		*participants[0003] = (000B): FxReference 'WW-10-40-10'
+		*participants[0004] = (000C): EndOfFeatures
+	component = (0003): PartComponent  a0=(100,000)    a1=(0001,0000) index=0010 u32_0=000C lst1={{12115D87-4545-5E57-FD74-BAA2FC39CF26}:0001,{0CA9112D-11D0-838B-0008-19B00524DC09}:0001}    
+		objects[0000] = (000C): EndOfFeatures  flags=2200  index=0001 s32_0=-1
+			next = (001C): Label a0=(0000,0000)    index=FFFFFFFF  uid={00000000-0000-0000-0000-000000000000}
+		objects[0001] = (0007): SurfaceBody  flags=3004200  index=0002 
+			next = (0017): Label 'Bryła1' a0=(0000,0000)    index=000B  uid={00000000-0000-0000-0000-000000000000}
+		objects[0002] = (000A): BrowserFolder 'Origin'  flags=0200  index=0003
+			next = (001A): Label 'Origin' a0=(0000,0000)    index=000A  uid={00000000-0000-0000-0000-000000000000}
+				*participants[0000] = (000D): Plane 'YZ Plane'
+				*participants[0001] = (000E): Plane 'XZ Plane'
+				*participants[0002] = (000F): Plane 'XY Plane'
+				*participants[0003] = (0010): Line3D (-1,0,0)-(1,0,0)
+				*participants[0004] = (0011): Line3D (0,-1,0)-(0,1,0)
+				*participants[0005] = (0012): Line3D (0,0,-1)-(0,0,1)
+				*participants[0006] = (0013): Point3D - (0,0,0)
+		objects[0003] = (000D): Plane 'YZ Plane'  flags=20200  index=0004 flags2=428000   u32_1=0203 u32_2=0000 center=Vector (0.0, 0.0, 0.0) a1=Vector (-0.0, 1.0, 0.0) normal=Vector (0.0, -0.0, 1.0)
+			next = (001D): Label 'YZ Plane' a0=(0000,0000)    index=0003  uid={00000000-0000-0000-0000-000000000000}
+		objects[0004] = (000E): Plane 'XZ Plane'  flags=20200  index=0005 flags2=428000   u32_1=0000 center=Vector (0.0, 0.0, 0.0) a1=Vector (-1.0, 0.0, 0.0) normal=Vector (0.0, -0.0, 1.0)
+			next = (001E): Label 'XZ Plane' a0=(0000,0000)    index=0004  uid={00000000-0000-0000-0000-000000000000}
+		objects[0005] = (000F): Plane 'XY Plane'  flags=20200  index=0006 flags2=428000   u32_1=0000 center=Vector (0.0, 0.0, 0.0) a1=Vector (1.0, 0.0, -0.0) normal=Vector (-0.0, 1.0, 0.0)
+			next = (001F): Label 'XY Plane' a0=(0000,0000)    index=0005  uid={00000000-0000-0000-0000-000000000000}
+		objects[0006] = (0010): Line3D  flags=20200  index=0007 flags2=424000    pos=Vector (-1.0, 0.0, 0.0) dir=Vector (2.0, 0.0, 0.0) u8_0=00
+			next = (0020): Label 'X Axis' a0=(0000,0000)    index=0006  uid={00000000-0000-0000-0000-000000000000}
+		objects[0007] = (0011): Line3D  flags=20200  index=0008 flags2=424000    pos=Vector (0.0, -1.0, 0.0) dir=Vector (0.0, 2.0, 0.0) u8_0=00
+			next = (0021): Label 'Y Axis' a0=(0000,0000)    index=0007  uid={00000000-0000-0000-0000-000000000000}
+		objects[0008] = (0012): Line3D  flags=20200  index=0009 flags2=424000    pos=Vector (0.0, 0.0, -1.0) dir=Vector (0.0, 0.0, 2.0) u8_0=00
+			next = (0022): Label 'Z Axis' a0=(0000,0000)    index=0008  uid={00000000-0000-0000-0000-000000000000}
+		objects[0009] = (0013): Point3D  flags=20200  index=000A flags2=22000   pos=Vector (0.0, 0.0, 0.0)   
+			next = (0023): Label 'Center Point' a0=(0000,0000)    index=0009  uid={00000000-0000-0000-0000-000000000000}
+		objects[000A] = (0009): BodiesFolder 'Surface Bodies'  flags=0200  index=000B u16_0=001
+			next = (0019): Label 'Surface Bodies' a0=(0000,0000)    index=0002  uid={00000000-0000-0000-0000-000000000000}
+		objects[000B] = (0008): BodiesFolder 'Solid Bodies'  flags=0200  index=000C u16_0=000
+			next = (0018): Label 'Solid Bodies' a0=(0000,0000)    index=0001  uid={00000000-0000-0000-0000-000000000000}
+				*participants[0000] = (0007): SurfaceBody 'Bryła1'
+		objects[000C] = (0014): SurfaceBody  flags=4200  index=000D 
+		objects[000D] = (0015): Parameter 'RDxVar0'  flags=8024200  index=000E valueNominal=0000 valueModel=0000
+		objects[000E] = (000B): FxReference 'WW-10-40-10'  flags=6200  index=000F s32_0=2400 outlineItem=0000  u32_1=0000
+			next = (001B): 656DD01E 'WW-10-40-10' a0=(0000,0000)    u8_0=01
+				next = (0024): Label 'WW-10-40-10' a0=(0000,0000)    index=000B  uid={0CA9112D-11D0-838B-0008-19B00524DC09}
+					*owner = (000B): FxReference 'WW-10-40-10'
+					next = (0025): 56970DFA a0=(0000,0000)    u32_0=041E u8_0=00
+						*owner = (000B): FxReference 'WW-10-40-10'
+			*properties[0000] = (0014): SurfaceBody
+			*properties[0001] = (0007): SurfaceBody 'Bryła1'
+		*parameters[RDxVar0] = (0015): Parameter 'RDxVar0'=0
+	nameTable = (0004): NameTable  lastIdx=0000 
+	display = (0005): DisplayDecimals  u32_0=0000  length=003 angle=002 u16_0=000
+	*ref_3 = (0003): PartComponent
+	mdlTxnMgr = (0006): ModelerTxnMgr  flags=0000   u32_0=0001 u32_1=0002 lst_1=[80000003 000F [(0001,01,0002),(0002,00,0000)],80000003 8000000F [(0001,01,0003),(0002,00,0001)]] u32_2=0000
+		asm = (0016): ASM u32_0=0357 schema=002B fmt="ASM BinaryFile4" SAT=<Acis.AcisReader object at 0x7ff8bfa86940> nameMatches={} dcAttributes={} selectedKey=80000016 delta_state=2 
+	*ref_4 = (0007): SurfaceBody 'Bryła1'
+(0026): FaceMergeData s32_0=0   lst1=[] lst2=[] lst3=[]
+	nameTable = (0027): NameTable  lastIdx=0000 

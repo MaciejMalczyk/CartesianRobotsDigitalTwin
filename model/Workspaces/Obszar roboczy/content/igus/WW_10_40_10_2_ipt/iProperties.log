@@ -1,0 +1,53 @@
+Design Tracking Control:
+ 13 -                NextVersion: '2'
+ 14 -             CurrentVersion: '1'
+ 16 -                LastSavedBy: 'mikoma'
+ 17 -              LastSavedDate: 2022/03/14 20:23:08.840453
+ 18 -                         18: '8D9F4141-47BF-2432-25C5-A6B2C732F825'
+ 21 -                         21: 'E698794B-4662-41B4-F722-61BDD64CFC6F'
+ 22 -               BuildVersion: 240168000
+
+Design Tracking Properties:
+  4 -               CreationDate: 2022/03/14 18:15:54.000000
+  5 -                 PartNumber: 'WW_10_40_10_2'
+ 20 -                   Material: 'Ogólny'
+ 21 -              PartPropRevId: '5E72FB4E-D863-4014-8FAF-BD50A02D5143'
+ 29 -                Description: 'STEP AP214'
+ 31 -                 DocSubType: '4D29B490-49B2-11D0-93C3-7E0706000000'
+ 32 -             DocSubTypeName: 'Modeling'
+ 40 -               DesignStatus: 1
+ 41 -                   Designer: 'mikoma'
+ 43 -                  Authority: 'unknown authorization'
+ 46 -          ExternalPropRevId: '4D29B490-49B2-11D0-93C3-7E0706000000'
+ 62 -             ValidMassProps: 17
+ 67 -            LastUpdatedWith: '2020 (Build 240168000, 168)'
+ 71 -         MaterialIdentifier: 'C:\\Users\\Public\\Documents\\Autodesk\\Inventor 2020\\Design Data\\Materials\\InventorMaterialLibrary.adsklib#1:Generic\n#MaterialInv_072'
+ 72 -                 Appearance: 'Domyślna'
+
+Inventor Document Summary Information:
+ 15 -                    Company: 'CADClick - www.CADClick.com'
+
+Inventor Summary Information:
+  2 -                      Title: 'cctmp_E69CCA0F-58EE-4DFB-8188-27B820C9E721_2022_03_14_19_15_53_0657_50012..stp'
+  4 -                     Author: 'igus GmbH'
+  9 -                   Revision: ' NONE'
+ 17 -                  Thumbnail: PNG: 512 x 512
+
+Inventor User Defined Properties:
+  0 -                          0: 255
+  3 -                          3: ' '
+  4 -                          4: 'Spatial InterOp 3D'
+
+_InternalDateMigration:
+  0 -                          0: 255
+  3 -                          3: True
+
+_Private Model Information:
+  8 -                LengthUnits: 11269
+  9 -                 AngleUnits: 11278
+ 10 -                  TimeUnits: 11290
+ 11 -                  MassUnits: 11283
+ 12 -     LengthDisplayPrecision: 3
+ 13 -      AngleDisplayPrecision: 2
+ 16 -       PartActiveColorStyle: '<PartActiveColorStyle><Category>Miscellaneous</Category><StyleName>Domyślna</StyleName><Protein><MaterialId>InvGen-071</MaterialId><Scale>1.000000</Scale><Rotation>0.000000</Rotation></Protein></PartActiveColorStyle>'
+

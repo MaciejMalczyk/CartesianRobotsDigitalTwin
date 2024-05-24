@@ -1,0 +1,2 @@
+void(* resetF) (void) = 0;
+resetF();

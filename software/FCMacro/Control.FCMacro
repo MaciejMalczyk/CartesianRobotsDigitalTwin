@@ -1,0 +1,329 @@
+import sys
+sys.path.insert(0,"/home/golf/.local/lib/python3.10/site-packages/")
+import os
+import math
+import json
+import serial
+import FreeCAD,FreeCADGui
+from PySide import QtCore, QtGui
+from PySide.QtCore import QRunnable, Slot, QThread, Signal
+import time
+
+import numpy as np
+import cv2 as cv
+
+#set rootdir for macro files
+rootdir = "/home/golf/.local/share/FreeCAD/Macro"
+FreeCAD.ControlExternal={}
+FreeCAD.ControlExternal['pos']=[]
+
+#serial connection mangement
+class SerialConnection:
+	def __init__(self, device, baud):
+		self.device = device
+		self.baud = baud
+		self.serial_conn = serial.Serial(self.device, baudrate=self.baud, timeout=0, write_timeout=0)
+
+	def send(self, msg):
+		self.serial_conn.write((json.dumps(msg)+"#").encode("ascii"))
+		self.serial_conn.reset_input_buffer()
+		
+	def read(self):
+		try:
+			data = json.loads(self.serial_conn.readline().decode("ascii"))
+		except:
+			data = {}
+		else:
+			self.serial_conn.reset_input_buffer()
+		
+		return data
+	
+	def close(self):
+		self.serial_conn.close()
+
+#robot control class containing everything to control model and physical robot
+class RobotControl:
+	def __init__(self, config):
+		self.config = config
+		self.dev = self.config["device"]
+		self.name = self.config["name"]
+		self.Z = self.name+"_Z"
+		self.Y = self.name+"_Y"
+		self.C = self.name+"_C"
+
+		self.serial = SerialConnection(self.dev, 2000000)
+
+		self.offsets = FreeCAD.ActiveDocument.getObjectsByLabel("Offsets")[0]
+		self.ranges = FreeCAD.ActiveDocument.getObjectsByLabel("Ranges")[0]
+
+		#offsets in cartesian coordinate system (in axes and in angles)
+		self.off = {
+			#[x, y, z]
+			"Y": [self.offsets.get(self.name+"_Y_x"), self.offsets.get(self.name+"_Y_y"), self.offsets.get(self.name+"_Y_z")],
+			"Z": [self.offsets.get(self.name+"_Z_x"), self.offsets.get(self.name+"_Z_y"), self.offsets.get(self.name+"_Z_z")],
+			"C": [self.offsets.get(self.name+"_C_x"), self.offsets.get(self.name+"_C_y"), self.offsets.get(self.name+"_C_z")],
+			"rotY": [self.offsets.get(self.name+"_Y_rotX"), self.offsets.get(self.name+"_Y_rotY"), self.offsets.get(self.name+"_Y_rotZ"), self.offsets.get(self.name+"_Y_rotA")],
+			"rotZ": [self.offsets.get(self.name+"_Z_rotX"), self.offsets.get(self.name+"_Z_rotY"), self.offsets.get(self.name+"_Z_rotZ"), self.offsets.get(self.name+"_Z_rotA")], 
+			"rotC": [self.offsets.get(self.name+"_C_rotX"), self.offsets.get(self.name+"_C_rotY"), self.offsets.get(self.name+"_C_rotZ"), self.offsets.get(self.name+"_C_rotA")],
+		}
+		
+		#move dictionary to pass set movements across class
+		self.moveDict = {
+			"Y": 0,
+			"X": 0,
+			"Z": 0
+		}
+
+
+	#robot move method
+	def visualizationMove(self, x, y, z):
+		#transform steps to position in [mm]
+		self.moveDict["X"] = x*self.ranges.get("Range_X_stepping")/self.ranges.get("Range_X_stepsRot")*self.ranges.get("Range_X_mmRot")
+		self.moveDict["Y"] = y*self.ranges.get("Range_Y_stepping")/self.ranges.get("Range_Y_stepsRot")*self.ranges.get("Range_Y_mmRot")
+		self.moveDict["Z"] = z*self.ranges.get("Range_Z_stepping")/self.ranges.get("Range_Z_stepsRot")*self.ranges.get("Range_Z_mmRot")
+		#X
+		FreeCAD.ActiveDocument.getObjectsByLabel(self.Z)[0].Placement = App.Placement(App.Vector(self.off["Z"][0]+self.moveDict["X"], self.off["Z"][1], self.off["Z"][2]),App.Rotation(App.Vector(self.off["rotZ"][0],self.off["rotZ"][1],self.off["rotZ"][2]),self.off["rotZ"][3]))	
+		#Z		
+		FreeCAD.ActiveDocument.getObjectsByLabel(self.Y)[0].Placement = App.Placement(App.Vector(self.off["Y"][0]+self.moveDict["X"], self.off["Y"][1], self.off["Y"][2]+self.moveDict["Z"]),App.Rotation(App.Vector(self.off["rotY"][0],self.off["rotY"][1],self.off["rotY"][2]),self.off["rotY"][3]))	
+		#Y		
+		FreeCAD.ActiveDocument.getObjectsByLabel(self.C)[0].Placement = App.Placement(App.Vector(self.off["C"][0]+self.moveDict["X"], self.off["C"][1]+self.moveDict["Y"], self.off["C"][2]+self.moveDict["Z"]),App.Rotation(App.Vector(self.off["rotC"][0],self.off["rotC"][1],self.off["rotC"][2]),self.off["rotC"][3]))	
+
+	#send serial data method
+	def robotSerialSend(self, x, y, z):
+		self.serial.send({"x": x, "y": y, "z": z})
+
+class RobotControlExternal(RobotControl):
+	def __init__(self, config):
+		super().__init__(config)
+		
+		self.timer = QtCore.QTimer()
+		self.timerInterval = 100
+		self.timer.setInterval(self.timerInterval)
+		self.tempPosition = [0,0,0]
+		self.sensitivity = 10
+		self.desiredRadius = 50
+		
+		self.run()
+		
+	def stop(self):
+		self.timer.stop()
+		self.serial.close()
+	
+	def move(self):
+		data = self.serial.read()
+		try:
+			self.visualizationMove(-data["x"], -data["y"], data["z"])
+		except:
+			pass
+			
+		cameraData = FreeCAD.ControlExternal['pos']
+		
+		if (len(cameraData) == 3):
+			cx, cy, cr = cameraData
+			dx = 480 - cx
+			dy = 270 - cy
+			dr = (self.desiredRadius - cr)*10
+			
+			try:
+				if ((data["y"] + dx) >= 0):
+					if (abs(dx) > self.sensitivity):
+						if ((data["y"] + dy) <= self.ranges.get("Range_Y_maxSteps")):
+							self.tempPosition[0] = data["y"] + dx
+			except:
+				pass
+			
+			try:
+				if ((data["z"] + dy) >= 0):
+					if (abs(dy) > self.sensitivity):
+						if ((data["z"] + dy) <= self.ranges.get("Range_Z_maxSteps")):
+							self.tempPosition[1] = data["z"] + dy
+			except:
+				pass
+			
+			try:
+				if ((data["x"] + dr) >= 0):
+					if (abs(dr) > self.sensitivity*2):
+						if ((data["x"] + dr) <= self.ranges.get("Range_X_maxSteps")):
+							self.tempPosition[2] = data["x"] + dr
+			except:
+				pass
+			
+			
+		self.robotSerialSend(int(self.tempPosition[2]),int(self.tempPosition[0]),int(self.tempPosition[1]))
+			
+	def run(self):
+		self.timer.timeout.connect(self.move)
+		self.timer.start()
+		
+class RobotControlGui(RobotControl):
+	def __init__(self, form, rootdir, config):
+		super().__init__(config)
+		self.form = form
+		self.rootdir = rootdir
+		self.widget = FreeCADGui.PySideUic.loadUi(self.rootdir + "/" + self.form)
+		self.timer = QtCore.QTimer()
+		self.timerInterval = 50
+		self.timer.setInterval(self.timerInterval)
+	
+		self.thread = WorkerVideo()
+
+		self.run()
+	
+	
+	#zero out axes
+	def home(self):
+		self.serial.send({"home":1})
+		self.widget.sliderX.setValue(0)
+		self.widget.sliderY.setValue(0)
+		self.widget.sliderZ.setValue(0)
+		
+	#init QSliders
+	def slidersInit(self):
+		self.widget.sliderX.setMaximum(self.ranges.get("Range_X_maxSteps"))
+		self.widget.sliderY.setMaximum(self.ranges.get("Range_Y_maxSteps"))
+		self.widget.sliderZ.setMaximum(self.ranges.get("Range_Z_maxSteps"))
+		self.widget.sliderX.setValue(0)
+		self.widget.sliderY.setValue(0)
+		self.widget.sliderZ.setValue(0)
+		self.widget.sliderX.setEnabled(True)
+		self.widget.sliderY.setEnabled(True)
+		self.widget.sliderZ.setEnabled(True)
+	
+	def visualizeMovement(self):
+		data = self.serial.read()
+		try:
+			self.widget.spinBoxX.setValue(data["x"]*self.ranges.get("Range_X_stepping")/self.ranges.get("Range_X_stepsRot")*self.ranges.get("Range_X_mmRot"))
+			self.widget.spinBoxY.setValue(data["y"]*self.ranges.get("Range_Y_stepping")/self.ranges.get("Range_Y_stepsRot")*self.ranges.get("Range_Y_mmRot"))
+			self.widget.spinBoxZ.setValue(data["z"]*self.ranges.get("Range_Z_stepping")/self.ranges.get("Range_Z_stepsRot")*self.ranges.get("Range_Z_mmRot"))
+			self.visualizationMove(data["x"],data["y"],data["z"])
+		except:
+			pass
+
+	#control movement with sliders
+	def sliderControl(self):
+		self.slidersInit()
+		
+		self.timer.timeout.connect(self.visualizeMovement)
+
+		
+		def sendToRobot():
+			xs = self.widget.sliderX.value()
+			ys = self.widget.sliderY.value()
+			zs = self.widget.sliderZ.value()
+			self.robotSerialSend(xs,ys,zs)
+		
+		self.widget.sliderX.valueChanged.connect(sendToRobot)
+		self.widget.sliderY.valueChanged.connect(sendToRobot)
+		self.widget.sliderZ.valueChanged.connect(sendToRobot)
+
+
+	#safely kill class and its components
+	def stop(self):
+		self.timer.stop()
+		self.serial.close()
+		self.thread.stop()
+		#this stop RobotControlExternal timer. For now i dont have any other solution for that
+		FreeCAD.ControlExternal['rce'].stop()
+		self.widget.close()
+
+	#main loop for class
+	def run(self):
+		
+		self.widget.show()
+		self.timer.start()
+		self.sliderControl()
+		
+		def displayImage(qpix):
+			self.widget.labelVideo.setPixmap(qpix)
+			
+		def t(d):
+			FreeCAD.ControlExternal['pos'] = d
+		
+		self.thread.frameSignal.connect(displayImage)
+		self.thread.circleSignal.connect(t)
+		self.thread.start()
+		
+		self.widget.buttonHome.clicked.connect(self.home)
+		self.widget.buttonExit.clicked.connect(self.stop)
+
+# Video worker class for opencv circle detection
+class WorkerVideo(QThread):
+	
+	frameSignal = Signal(QtGui.QPixmap)
+	circleSignal = Signal(list)
+	
+	def run(self):
+		self.cap = cv.VideoCapture(0,  cv.CAP_V4L2)
+		self.cap.set(cv.CAP_PROP_FRAME_WIDTH, 1920/2)
+		self.cap.set(cv.CAP_PROP_FRAME_HEIGHT, 1080/2)
+
+		if not self.cap.isOpened():
+			print("Cannot open camera")
+			exit()
+		
+		self._active = True
+		while self._active:
+			 # Capture frame-by-frame
+			try:
+				ret, frame = self.cap.read()
+				# if frame is read correctly ret is True
+				if not ret:
+					print("Can't receive frame (stream end?). Exiting ...")
+					break
+				
+				gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+				circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1, 1000, param1=35, param2=90, minRadius=20, maxRadius=100)
+				
+				if circles is not None:
+					circles = np.uint16(np.around(circles))
+					for i in circles[0, :]:
+						self.circleSignal.emit(i)
+						center = (i[0], i[1])
+						# circle center
+						cv.circle(frame, center, 1, (0, 100, 100), 3)
+						# circle outline
+						radius = i[2]
+						cv.circle(frame, center, radius, (255, 0, 255), 3)
+				else:
+					self.circleSignal.emit([])
+				
+				
+				
+				# output image to gui
+				out = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
+				dim = (int(1920/4), int(1080/4))
+				out = cv.resize(out, dim)
+				h, w, ch = out.shape
+				bytesPLine = 3*w
+				qImg = QtGui.QImage(out.data, w, h, bytesPLine, QtGui.QImage.Format_RGB888)
+				qPix = QtGui.QPixmap(qImg)
+				self.frameSignal.emit(qPix)
+			except Exception as err:
+				print("Something went wrong...", err)
+				self.stop()
+			
+			
+	def stop(self):
+		self._active = False
+		self.cap.release()
+
+#Robot class for storing data of one robot
+class Robot:
+	def __init__(self, device, name):
+		self.params = {
+			"device": device,
+			"name": name
+		}
+	
+	def config(self):
+		return self.params
+
+	
+R1 = Robot("/dev/robot1", "R1")
+R2 = Robot("/dev/robot2", "R2")
+FreeCAD.ControlExternal['rce']=RobotControlExternal(R2.config())
+FreeCAD.ControlExternal['rcg']=RobotControlGui("sliders.ui", rootdir, R1.config())
+
+
+
+

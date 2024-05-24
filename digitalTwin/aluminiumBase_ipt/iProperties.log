@@ -1,0 +1,45 @@
+Design Tracking Control:
+ 13 -                NextVersion: '2'
+ 14 -             CurrentVersion: '1'
+ 16 -                LastSavedBy: 'mikoma'
+ 17 -              LastSavedDate: 2022/05/17 10:14:31.249565
+ 18 -                         18: '03D965D8-40E9-D8B5-615B-39897E37E87C'
+ 21 -                         21: '770FDC4F-4D3A-3C7D-FDCC-FF897166D194'
+ 22 -               BuildVersion: 240168000
+
+Design Tracking Properties:
+  4 -               CreationDate: 2022/05/17 10:12:59.354000
+  5 -                 PartNumber: 'aluminiumBase'
+ 20 -                   Material: 'Ogólny'
+ 21 -              PartPropRevId: '09546DE0-FBFF-4D6D-87A6-E021E06769BA'
+ 31 -                 DocSubType: '4D29B490-49B2-11D0-93C3-7E0706000000'
+ 32 -             DocSubTypeName: 'Modeling'
+ 40 -               DesignStatus: 1
+ 41 -                   Designer: 'mikoma'
+ 46 -          ExternalPropRevId: '4D29B490-49B2-11D0-93C3-7E0706000000'
+ 62 -             ValidMassProps: 17
+ 67 -            LastUpdatedWith: '2020 (Build 240168000, 168)'
+ 71 -         MaterialIdentifier: 'C:\\Users\\Public\\Documents\\Autodesk\\Inventor 2020\\Design Data\\Materials\\InventorMaterialLibrary.adsklib#1:Generic\n#MaterialInv_072'
+ 72 -                 Appearance: 'Domyślna'
+
+Inventor Document Summary Information:
+
+Inventor Summary Information:
+  4 -                     Author: 'mikoma'
+ 17 -                  Thumbnail: PNG: 180 x 180
+
+Inventor User Defined Properties:
+
+_InternalDateMigration:
+  0 -                          0: 255
+  3 -                          3: True
+
+_Private Model Information:
+  8 -                LengthUnits: 11269
+  9 -                 AngleUnits: 11279
+ 10 -                  TimeUnits: 11290
+ 11 -                  MassUnits: 11283
+ 12 -     LengthDisplayPrecision: 3
+ 13 -      AngleDisplayPrecision: 2
+ 16 -       PartActiveColorStyle: '<PartActiveColorStyle><Category>Miscellaneous</Category><StyleName>Domyślna</StyleName><Protein><MaterialId>InvGen-071</MaterialId><Scale>1,000000</Scale><Rotation>0,000000</Rotation></Protein></PartActiveColorStyle>'
+

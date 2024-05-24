@@ -1,0 +1,5 @@
+#robot1
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0001", ATTRS{serial}=="64935343633351C050C0", SYMLINK+="robot1"
+
+#robot2
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", ATTRS{serial}=="5573132363635190E190", SYMLINK+="robot2"

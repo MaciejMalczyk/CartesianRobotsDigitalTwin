@@ -1,0 +1,478 @@
+[2020]
+(0001): GroupNode u32_0=0000  u8_0=01 
+	attrs = (0003): Attributesu32_0=0000 u8_0=00 
+		attributes[0000] = (0010): Attr_C9DA5109u32_0=0005 u8_0=01 u32_1=0000 lst0=() u32_2=0000
+	parts[0000] = (0002): PartNode u32_0=0000  u8_0=01  u32_1=0001  Color.c0=#333333FF Color.diffuse=#CCCCCCFF Color.c1=#FFFFFFFF Color.c2=#000000FF Color.f=20
+		attrs = (0004): Attributesu32_0=0000 u8_0=00 
+			attributes[0000] = (0011): AttrPartDrawu32_0=0001 u8_0=00 u32_1=0000 lst0=() a2=(0019,0019) Color.c0=#BFBFBFFF Color.diffuse=#BFBFBFFF Color.c2=#000000FF Color.c3=#000000FF Color.a5=(000,4170) a0=(000,000)
+		items[0000] = (0005): WrkPlane u32_0=0000  u8_0=01   u32_1=0001 index=0002 indexDC=0004 a1=(-0.015,-44,0,0.315,44,0) transformation= transformation={a0=|00+0|+000|0+00|000+| m=[[0, 0, 1, 0],[1, 0, 0, 0],[0, 1, 0, 0],[0, 0, 0, 10]]} b0=True b1=True b2=False
+			attrs = (0012): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (003D): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (003E): Attr_Colorsa0=(0000,0000) u8_0=00  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA019 Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a1=(1,1,1,-1) u8_1=00 a2=(000,000,000,000,000,3F80,000,000)
+			obj = (0013): 3dObject flags=0000    u32_0=0000 
+				styles = (003F): ObjctStyles
+					styles[0000] = (00CE): Style_B32BF6A8u32_0=0001 u32_1=A7F8
+					styles[0001] = (00CF): Style_B32BF6A5u32_0=0001 u16_0=001
+					styles[0002] = (00D0): Style_Lineu32_0=0001 u16_0=001 width=1 a0=(001,FFFF) u8_0=00 u16_1=000 a1=[] a2=(0,1,0) a3=(000,000,00F,000)
+				numRef = (0040): RefByIndexPlane u32_0=0001 refIdx=0002
+				objects[0000] = (0041): Edge_A79EACD2 flags=0000    u32_0=0000 points=[[-0.015,-44,0],[-0.015,44,0],[0.315,44,0],[0.315,-44,0]] lst1=(0,3,1,1,3,2) n=[[0,0,1],[0,0,1],[0,0,1],[0,0,1]] uv=[] a0=(103,000)  a1=(0,0)
+					styles = (00D1): ObjctStyles
+						styles[0000] = (0142): Style_Visibilityu32_0=000A visible=True
+						styles[0001] = (0143): Style_B32BF6ABu32_0=0001 u8_0=00
+				objects[0001] = (0042): Line3D flags=0001    u32_0=0000 pos=Vector (-0.015000000000000003, -44.00000000000001, 0.0) dir=Vector (-0.015000000000000003, 44.0, 0.0)
+					*numRef = (0040): RefByIndexPlane
+				objects[0002] = (0043): Line3D flags=0002    u32_0=0000 pos=Vector (-0.015000000000000003, 44.0, 0.0) dir=Vector (0.31500000000000006, 44.0, 0.0)
+					*numRef = (0040): RefByIndexPlane
+				objects[0003] = (0044): Line3D flags=0003    u32_0=0000 pos=Vector (0.31500000000000006, 44.0, 0.0) dir=Vector (0.31500000000000006, -44.00000000000001, 0.0)
+					*numRef = (0040): RefByIndexPlane
+				objects[0004] = (0045): Line3D flags=0004    u32_0=0000 pos=Vector (0.31500000000000006, -44.00000000000001, 0.0) dir=Vector (-0.015000000000000003, -44.00000000000001, 0.0)
+					*numRef = (0040): RefByIndexPlane
+				objects[0005] = (0046): Point3D flags=0005    u32_0=0000 pos=Vector (-0.015000000000000003, -44.00000000000001, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00D2): ObjctStyles
+						styles[0000] = (0144): Style_Visibilityu32_0=0001 visible=False
+					*numRef = (0040): RefByIndexPlane
+				objects[0006] = (0047): Point3D flags=0006    u32_0=0000 pos=Vector (-0.015000000000000003, 44.0, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00D3): ObjctStyles
+						*styles[0000] = (0144): Style_Visibility
+					*numRef = (0040): RefByIndexPlane
+				objects[0007] = (0048): Point3D flags=0007    u32_0=0000 pos=Vector (0.31500000000000006, 44.0, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00D4): ObjctStyles
+						*styles[0000] = (0144): Style_Visibility
+					*numRef = (0040): RefByIndexPlane
+				objects[0008] = (0049): Point3D flags=0008    u32_0=0000 pos=Vector (0.31500000000000006, -44.00000000000001, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00D5): ObjctStyles
+						*styles[0000] = (0144): Style_Visibility
+					*numRef = (0040): RefByIndexPlane
+				objects[0009] = (004A): Text3D 'YZ Plane' flags=0009    u32_0=0000 vec=Vector (-0.015000000000000003, 44.0, 0.0) a0=Vector (0.33000000000000007, 0.0, 0.0) a1=(009,A7F9,000) b_0=False
+					styles = (00D6): ObjctStyles
+						styles[0000] = (0145): Style_0AE12F04 'YZ Plane'u32_0=0001 vec_1=Vector (-0.015000000000000003, -44.00000000000001, 0.0) vec_2=Vector (0.31500000000000006, 44.0, 0.0)
+						styles[0001] = (0146): Style_Visibilityu32_0=0001 visible=False
+		items[0001] = (0006): WrkPlane u32_0=0000  u8_0=01   u32_1=0001 index=0003 indexDC=0005 a1=(-55,-44,0,55,44,0) transformation= transformation={a0=|-000|00+0|0+00|000+| m=[[-1, 0, 0, 0],[0, 0, 1, 0],[0, 1, 0, 0],[0, 0, 0, 10]]} b0=True b1=True b2=False
+			attrs = (0014): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (004B): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (004C): Attr_Colorsa0=(0000,0000) u8_0=00  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA019 Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a1=(1,1,1,-1) u8_1=00 a2=(000,000,000,000,000,3F80,000,000)
+			obj = (0015): 3dObject flags=0000    u32_0=0000 
+				styles = (004D): ObjctStyles
+					styles[0000] = (00D7): Style_B32BF6A8u32_0=0001 u32_1=A7F8
+					styles[0001] = (00D8): Style_B32BF6A5u32_0=0001 u16_0=001
+					styles[0002] = (00D9): Style_Lineu32_0=0001 u16_0=001 width=1 a0=(001,FFFF) u8_0=00 u16_1=000 a1=[] a2=(0,1,0) a3=(000,000,00F,000)
+				numRef = (004E): RefByIndexPlane u32_0=0001 refIdx=0003
+				objects[0000] = (004F): Edge_A79EACD2 flags=0000    u32_0=0000 points=[[-55,-44,0],[-55,44,0],[55,44,0],[55,-44,0]] lst1=(0,3,1,1,3,2) n=[[0,0,1],[0,0,1],[0,0,1],[0,0,1]] uv=[] a0=(103,000)  a1=(0,0)
+					styles = (00DA): ObjctStyles
+						styles[0000] = (0147): Style_Visibilityu32_0=000A visible=True
+						styles[0001] = (0148): Style_B32BF6ABu32_0=0001 u8_0=00
+				objects[0001] = (0050): Line3D flags=0001    u32_0=0000 pos=Vector (-55.00000000000003, -44.00000000000001, 0.0) dir=Vector (-55.00000000000003, 44.0, 0.0)
+					*numRef = (004E): RefByIndexPlane
+				objects[0002] = (0051): Line3D flags=0002    u32_0=0000 pos=Vector (-55.00000000000003, 44.0, 0.0) dir=Vector (55.0, 44.0, 0.0)
+					*numRef = (004E): RefByIndexPlane
+				objects[0003] = (0052): Line3D flags=0003    u32_0=0000 pos=Vector (55.0, 44.0, 0.0) dir=Vector (55.0, -44.00000000000001, 0.0)
+					*numRef = (004E): RefByIndexPlane
+				objects[0004] = (0053): Line3D flags=0004    u32_0=0000 pos=Vector (55.0, -44.00000000000001, 0.0) dir=Vector (-55.00000000000003, -44.00000000000001, 0.0)
+					*numRef = (004E): RefByIndexPlane
+				objects[0005] = (0054): Point3D flags=0005    u32_0=0000 pos=Vector (-55.00000000000003, -44.00000000000001, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00DB): ObjctStyles
+						styles[0000] = (0149): Style_Visibilityu32_0=0001 visible=False
+					*numRef = (004E): RefByIndexPlane
+				objects[0006] = (0055): Point3D flags=0006    u32_0=0000 pos=Vector (-55.00000000000003, 44.0, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00DC): ObjctStyles
+						*styles[0000] = (0149): Style_Visibility
+					*numRef = (004E): RefByIndexPlane
+				objects[0007] = (0056): Point3D flags=0007    u32_0=0000 pos=Vector (55.0, 44.0, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00DD): ObjctStyles
+						*styles[0000] = (0149): Style_Visibility
+					*numRef = (004E): RefByIndexPlane
+				objects[0008] = (0057): Point3D flags=0008    u32_0=0000 pos=Vector (55.0, -44.00000000000001, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00DE): ObjctStyles
+						*styles[0000] = (0149): Style_Visibility
+					*numRef = (004E): RefByIndexPlane
+				objects[0009] = (0058): Text3D 'XZ Plane' flags=0009    u32_0=0000 vec=Vector (-55.00000000000003, 44.0, 0.0) a0=Vector (110.00000000000003, 0.0, 0.0) a1=(009,A7F9,000) b_0=False
+					styles = (00DF): ObjctStyles
+						styles[0000] = (014A): Style_0AE12F04 'XZ Plane'u32_0=0001 vec_1=Vector (-55.00000000000003, -44.00000000000001, 0.0) vec_2=Vector (55.0, 44.0, 0.0)
+						styles[0001] = (014B): Style_Visibilityu32_0=0001 visible=False
+		items[0002] = (0007): WrkPlane u32_0=0000  u8_0=01   u32_1=0001 index=0004 indexDC=0006 a1=(-55,-0.015,0,55,0.315,0) transformation= transformation={a0=|+000|0+00|00+0|000+| m=[[1, 0, 0, 0],[0, 1, 0, 0],[0, 0, 1, 0],[0, 0, 0, 10]]} b0=True b1=True b2=False
+			attrs = (0016): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (0059): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (005A): Attr_Colorsa0=(0000,0000) u8_0=00  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA019 Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a1=(1,1,1,-1) u8_1=00 a2=(000,000,000,000,000,3F80,000,000)
+			obj = (0017): 3dObject flags=0000    u32_0=0000 
+				styles = (005B): ObjctStyles
+					styles[0000] = (00E0): Style_B32BF6A8u32_0=0001 u32_1=A7F8
+					styles[0001] = (00E1): Style_B32BF6A5u32_0=0001 u16_0=001
+					styles[0002] = (00E2): Style_Lineu32_0=0001 u16_0=001 width=1 a0=(001,FFFF) u8_0=00 u16_1=000 a1=[] a2=(0,1,0) a3=(000,000,00F,000)
+				numRef = (005C): RefByIndexPlane u32_0=0001 refIdx=0004
+				objects[0000] = (005D): Edge_A79EACD2 flags=0000    u32_0=0000 points=[[-55,-0.015,0],[-55,0.315,0],[55,0.315,0],[55,-0.015,0]] lst1=(0,3,1,1,3,2) n=[[0,0,1],[0,0,1],[0,0,1],[0,0,1]] uv=[] a0=(103,000)  a1=(0,0)
+					styles = (00E3): ObjctStyles
+						styles[0000] = (014C): Style_Visibilityu32_0=000A visible=True
+						styles[0001] = (014D): Style_B32BF6ABu32_0=0001 u8_0=00
+				objects[0001] = (005E): Line3D flags=0001    u32_0=0000 pos=Vector (-55.0, -0.015000000000000003, 0.0) dir=Vector (-55.0, 0.31500000000000006, 0.0)
+					*numRef = (005C): RefByIndexPlane
+				objects[0002] = (005F): Line3D flags=0002    u32_0=0000 pos=Vector (-55.0, 0.31500000000000006, 0.0) dir=Vector (55.00000000000003, 0.31500000000000006, 0.0)
+					*numRef = (005C): RefByIndexPlane
+				objects[0003] = (0060): Line3D flags=0003    u32_0=0000 pos=Vector (55.00000000000003, 0.31500000000000006, 0.0) dir=Vector (55.00000000000003, -0.015000000000000003, 0.0)
+					*numRef = (005C): RefByIndexPlane
+				objects[0004] = (0061): Line3D flags=0004    u32_0=0000 pos=Vector (55.00000000000003, -0.015000000000000003, 0.0) dir=Vector (-55.0, -0.015000000000000003, 0.0)
+					*numRef = (005C): RefByIndexPlane
+				objects[0005] = (0062): Point3D flags=0005    u32_0=0000 pos=Vector (-55.0, -0.015000000000000003, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00E4): ObjctStyles
+						styles[0000] = (014E): Style_Visibilityu32_0=0001 visible=False
+					*numRef = (005C): RefByIndexPlane
+				objects[0006] = (0063): Point3D flags=0006    u32_0=0000 pos=Vector (-55.0, 0.31500000000000006, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00E5): ObjctStyles
+						*styles[0000] = (014E): Style_Visibility
+					*numRef = (005C): RefByIndexPlane
+				objects[0007] = (0064): Point3D flags=0007    u32_0=0000 pos=Vector (55.00000000000003, 0.31500000000000006, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00E6): ObjctStyles
+						*styles[0000] = (014E): Style_Visibility
+					*numRef = (005C): RefByIndexPlane
+				objects[0008] = (0065): Point3D flags=0008    u32_0=0000 pos=Vector (55.00000000000003, -0.015000000000000003, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00E7): ObjctStyles
+						*styles[0000] = (014E): Style_Visibility
+					*numRef = (005C): RefByIndexPlane
+				objects[0009] = (0066): Text3D 'XY Plane' flags=0009    u32_0=0000 vec=Vector (-55.0, 0.31500000000000006, 0.0) a0=Vector (110.00000000000003, 0.0, 0.0) a1=(009,A7F9,000) b_0=False
+					styles = (00E8): ObjctStyles
+						styles[0000] = (014F): Style_0AE12F04 'XY Plane'u32_0=0001 vec_1=Vector (-55.0, -0.015000000000000003, 0.0) vec_2=Vector (55.00000000000003, 0.31500000000000006, 0.0)
+						styles[0001] = (0150): Style_Visibilityu32_0=0001 visible=False
+		items[0003] = (0008): WkrAxis u32_0=0000  u8_0=01   u32_1=0001 index=0005 indexDC=0007 transformation= transformation={a0=|+00-|0+00|00+0|000+| m=[[1, 0, 0, -10],[0, 1, 0, 0],[0, 0, 1, 0],[0, 0, 0, 10]]} b0=True b1=True b2=False
+			attrs = (0018): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (0067): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (0068): Attr_Colorsa0=(0000,0000) u8_0=00  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA0FF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a1=(1,1,1,-1) u8_1=00 a2=(000,000,000,000,000,3F80,000,000)
+			obj = (0019): 3dObject flags=0000    u32_0=0000 
+				styles = (0069): ObjctStyles
+					styles[0000] = (00E9): Style_B32BF6A5u32_0=0001 u16_0=002
+					styles[0001] = (00EA): Style_Lineu32_0=0001 u16_0=001 width=1 a0=(001,FFFF) u8_0=00 u16_1=000 a1=[] a2=(0,1,0) a3=(000,000,00F,000)
+				numRef = (006A): RefByIndexAxis u32_0=0001 refIdx=0005
+				objects[0000] = (006B): Line3D flags=0000    u32_0=0000 pos=Vector (-59.5, 0.0, 0.0) dir=Vector (61.50000000000003, 0.0, 0.0)
+					*numRef = (006A): RefByIndexAxis
+				objects[0001] = (006C): Point3D flags=0001    u32_0=0000 pos=Vector (-59.5, 0.0, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00EB): ObjctStyles
+						styles[0000] = (0151): Style_Visibilityu32_0=0001 visible=False
+					*numRef = (006A): RefByIndexAxis
+				objects[0002] = (006D): Point3D flags=0002    u32_0=0000 pos=Vector (61.50000000000003, 0.0, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00EC): ObjctStyles
+						*styles[0000] = (0151): Style_Visibility
+					*numRef = (006A): RefByIndexAxis
+		items[0004] = (0009): WkrAxis u32_0=0000  u8_0=01   u32_1=0001 index=0006 indexDC=0008 transformation= transformation={a0=|xx00|xx0-|00+0|000+| m=[[0, -1, 0, 0],[1, 0, 0, -10],[0, 0, 1, 0],[0, 0, 0, 10]]} b0=True b1=True b2=False
+			attrs = (001A): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (006E): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (006F): Attr_Colorsa0=(0000,0000) u8_0=00  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA0FF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a1=(1,1,1,-1) u8_1=00 a2=(000,000,000,000,000,3F80,000,000)
+			obj = (001B): 3dObject flags=0000    u32_0=0000 
+				styles = (0070): ObjctStyles
+					styles[0000] = (00ED): Style_B32BF6A5u32_0=0001 u16_0=002
+					styles[0001] = (00EE): Style_Lineu32_0=0001 u16_0=001 width=1 a0=(001,FFFF) u8_0=00 u16_1=000 a1=[] a2=(0,1,0) a3=(000,000,00F,000)
+				numRef = (0071): RefByIndexAxis u32_0=0001 refIdx=0006
+				objects[0000] = (0072): Line3D flags=0000    u32_0=0000 pos=Vector (0.9684999999999998, -2.1505019986989273e-16, 0.0) dir=Vector (1.3315, -2.9565239145767907e-16, 0.0)
+					*numRef = (0071): RefByIndexAxis
+				objects[0001] = (0073): Point3D flags=0001    u32_0=0000 pos=Vector (0.9684999999999998, -2.1505019986989273e-16, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00EF): ObjctStyles
+						styles[0000] = (0152): Style_Visibilityu32_0=0001 visible=False
+					*numRef = (0071): RefByIndexAxis
+				objects[0002] = (0074): Point3D flags=0002    u32_0=0000 pos=Vector (1.3315, -2.9565239145767907e-16, 0.0) f32_0=1 s32_0=1 u16_0=000
+					styles = (00F0): ObjctStyles
+						*styles[0000] = (0152): Style_Visibility
+					*numRef = (0071): RefByIndexAxis
+		items[0005] = (000A): WkrAxis u32_0=0000  u8_0=01   u32_1=0001 index=0007 indexDC=0009 transformation= transformation={a0=|x0x0|0+00|x0x-|000+| m=[[0, 0, -1, 0],[0, 1, 0, 0],[1, 0, 0, -10],[0, 0, 0, 10]]} b0=True b1=True b2=False
+			attrs = (001C): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (0075): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (0076): Attr_Colorsa0=(0000,0000) u8_0=00  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA0FF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a1=(1,1,1,-1) u8_1=00 a2=(000,000,000,000,000,3F80,000,000)
+			obj = (001D): 3dObject flags=0000    u32_0=0000 
+				styles = (0077): ObjctStyles
+					styles[0000] = (00F1): Style_B32BF6A5u32_0=0001 u16_0=002
+					styles[0001] = (00F2): Style_Lineu32_0=0001 u16_0=001 width=1 a0=(001,FFFF) u8_0=00 u16_1=000 a1=[] a2=(0,1,0) a3=(000,000,00F,000)
+				numRef = (0078): RefByIndexAxis u32_0=0001 refIdx=0007
+				objects[0000] = (0079): Line3D flags=0000    u32_0=0000 pos=Vector (-47.39999999999999, 0.0, 1.052491427344648e-14) dir=Vector (49.39999999999999, 0.0, -1.0969003483296543e-14)
+					*numRef = (0078): RefByIndexAxis
+				objects[0001] = (007A): Point3D flags=0001    u32_0=0000 pos=Vector (-47.39999999999999, 0.0, 1.052491427344648e-14) f32_0=1 s32_0=1 u16_0=000
+					styles = (00F3): ObjctStyles
+						styles[0000] = (0153): Style_Visibilityu32_0=0001 visible=False
+					*numRef = (0078): RefByIndexAxis
+				objects[0002] = (007B): Point3D flags=0002    u32_0=0000 pos=Vector (49.39999999999999, 0.0, -1.0969003483296543e-14) f32_0=1 s32_0=1 u16_0=000
+					styles = (00F4): ObjctStyles
+						*styles[0000] = (0153): Style_Visibility
+					*numRef = (0078): RefByIndexAxis
+		items[0006] = (000B): WrkPoint u32_0=0000  u8_0=01   u32_1=0001 index=0008 indexDC=000A transformation= transformation={a0=|+000|0+00|00+0|000+| m=[[1, 0, 0, 0],[0, 1, 0, 0],[0, 0, 1, 0],[0, 0, 0, 10]]} b0=True b2=False
+			attrs = (001E): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (007C): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+				attributes[0001] = (007D): Attr_12A31E33u32_0=0000 u8_0=00 u32_1=0000  Color.a0=(01,01) Color.c0=#197DA0FF Color.diffuse=#197DA07F Color.c2=#FFFFFFFF Color.c3=#000000FF Color.a5=(000,41A0) a0=(001,000,3F80,001,FFFF) u8_1=00 a1=(000,000,000,000,000,3F80,000,000)
+			obj = (001F): 3dObject flags=0000    u32_0=0000 
+				styles = (007E): ObjctStyles
+					styles[0000] = (00F5): Style_B32BF6A8u32_0=0001 u32_1=A7F8
+					styles[0001] = (00F6): Style_B32BF6A5u32_0=0001 u16_0=001
+				numRef = (007F): RefByIndexPoint u32_0=0001 refIdx=0008
+				objects[0000] = (0080): Point3D flags=0000    u32_0=0000 pos=Vector (0.0, 0.0, 0.0) f32_0=1 s32_0=5 u16_0=001
+					*numRef = (007F): RefByIndexPoint
+				objects[0001] = (0081): Point3D flags=0000    u32_0=0000 pos=Vector (0.0, 0.0, 0.0) f32_0=1 s32_0=6 u16_0=000
+					styles = (00F7): ObjctStyles
+						styles[0000] = (0154): Style_Visibilityu32_0=0001 visible=False
+		items[0007] = (000C): Body u32_0=0000  u8_0=01  indexDC=0002 u8_1=00 index=0009  u32_1=0021 u16_0=007      lst0=[(0.0005,0,0,1,1,1,1),(0.008,0,0,1,0,1,0)] a2=Vector (0.0, 3.0, 0.0) faces2edges={0028:002E,0029:0032,002A:0035,002B:0038,002C:0039,002D:0038} a3=(0,39)  aX=(00 00 00 00)
+			attrs = (0020): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (0082): Attr_189725D1u32_0=FFFFFFFF u8_0=00 u32_1=0000  u8_1=01 u16_0=000
+			obj = (0021): 3dObject flags=0000    u32_0=0000 
+				styles = (0083): ObjctStyles
+					styles[0000] = (00F8): Style_B32BF6A9u32_0=0001 u16_1=000
+				objects[0000] = (0022): 3dObject flags=10000000    u32_0=0000 
+					styles = (0084): ObjctStyles
+						styles[0000] = (00F9): Style_Solidu32_0=0001 solid=True
+						styles[0001] = (00FA): Style_LineColoru32_0=0001 Color.c0=#00000000 Color.diffuse=#BFBFBFFF Color.c1=#BFBFBFFF Color.c2=#000000FF Color.c3=#000000FF Color.f=15 u8_0=00
+					objects[0000] = (0085): Face flags=45400000    u32_0=0000  u8_0=00 box=(-50,0,-40,-50,0.3,40) key=0028 u32_1=0000 u32_2=0000
+						surface = (00FB): SurfacePlane dcIndices=[[75,4294967295]] u32_0=0000 u8_0=00
+						edges[0000] = (00FC): Edge_D79AD3F3 flags=0000    u32_0=0000 points=[[-50,0,-40],[-50,0,40],[-50,0.3,40],[-50,0.3,-40]] lst1=(0,1,3,3,1,2) n=[[-1,0,0],[-1,0,0],[-1,0,0],[-1,0,0]] uv=[[0,0],[80,0],[80,0.3],[0,0.3]] a0=(103,000)  a1=(1,1) aX=(02 00 00 30 08 00 00 00 08 00 00 00 00 00 00 00 FF BF FF 6F FF BF FF 6F FF BF FF 2F FF BF FF 2F FF BF FF 0F FF BF FF 0F FF BF FF 4F FF BF FF 4F 02 00 00 30 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 AC 02 00 00 30 00 00 00 00)
+					objects[0001] = (0086): Face flags=45400000    u32_0=0000  u8_0=00 box=(-50,0,-40,50,0.3,-40) key=0029 u32_1=0000 u32_2=0000
+						surface = (00FD): SurfacePlane dcIndices=[[75,4294967295]] u32_0=0000 u8_0=00
+						edges[0000] = (00FE): Edge_D79AD3F3 flags=0000    u32_0=0000 points=[[50,0,-40],[-50,0,-40],[-50,0.3,-40],[50,0.3,-40]] lst1=(0,1,3,3,1,2) n=[[0,0,-1],[0,0,-1],[0,0,-1],[0,0,-1]] uv=[[0,0],[100,0],[100,0.3],[0,0.3]] a0=(103,000)  a1=(1,1) aX=(02 00 00 30 08 00 00 00 08 00 00 00 00 00 00 00 FF BF FF 6F FF BF FF 6F FF BF FF 8F FF BF FF 8F FF BF FF AF FF BF FF AF FF BF FF 4F FF BF FF 4F 02 00 00 30 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 AC 02 00 00 30 00 00 00 00)
+					objects[0002] = (0087): Face flags=45400000    u32_0=0000  u8_0=00 box=(50,0,-40,50,0.3,40) key=002A u32_1=0000 u32_2=0000
+						surface = (00FF): SurfacePlane dcIndices=[[75,4294967295]] u32_0=0000 u8_0=00
+						edges[0000] = (0100): Edge_D79AD3F3 flags=0000    u32_0=0000 points=[[50,0,40],[50,0,-40],[50,0.3,-40],[50,0.3,40]] lst1=(0,1,3,3,1,2) n=[[1,0,0],[1,0,0],[1,0,0],[1,0,0]] uv=[[0,0],[80,0],[80,0.3],[0,0.3]] a0=(103,000)  a1=(1,1) aX=(02 00 00 30 08 00 00 00 08 00 00 00 00 00 00 00 FF BF FF 6F FF BF FF 6F FF BF FF 0F FF BF FF 0F FF BF FF 2F FF BF FF 2F FF BF FF 4F FF BF FF 4F 02 00 00 30 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 AC 02 00 00 30 00 00 00 00)
+					objects[0003] = (0088): Face flags=45400000    u32_0=0000  u8_0=00 box=(-50,0,40,50,0.3,40) key=002B u32_1=0000 u32_2=0000
+						surface = (0101): SurfacePlane dcIndices=[[75,4294967295]] u32_0=0000 u8_0=00
+						edges[0000] = (0102): Edge_D79AD3F3 flags=0000    u32_0=0000 points=[[-50,0,40],[50,0,40],[50,0.3,40],[-50,0.3,40]] lst1=(0,1,3,3,1,2) n=[[0,0,1],[0,0,1],[0,0,1],[0,0,1]] uv=[[0,0],[100,0],[100,0.3],[0,0.3]] a0=(103,000)  a1=(1,1) aX=(02 00 00 30 08 00 00 00 08 00 00 00 00 00 00 00 FF BF FF 6F FF BF FF 6F FF BF FF AF FF BF FF AF FF BF FF 8F FF BF FF 8F FF BF FF 4F FF BF FF 4F 02 00 00 30 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 AC 02 00 00 30 00 00 00 00)
+					objects[0004] = (0089): Face flags=45400000    u32_0=0000  u8_0=00 box=(-50,0.3,-40,50,0.3,40) key=002C u32_1=0000 u32_2=0000
+						surface = (0103): SurfacePlane dcIndices=[[75,4294967295]] u32_0=0000 u8_0=00
+						edges[0000] = (0104): Edge_D79AD3F3 flags=0000    u32_0=0000 points=[[-50,0.3,40],[50,0.3,40],[50,0.3,-40],[-50,0.3,-40]] lst1=(1,2,0,0,2,3) n=[[0,1,0],[0,1,0],[0,1,0],[0,1,0]] uv=[[40,-50],[40,50],[-40,50],[-40,-50]] a0=(103,000)  a1=(1,1) aX=(02 00 00 30 08 00 00 00 08 00 00 00 00 00 00 00 FF BF FF 8F FF BF FF 8F FF BF FF 0F FF BF FF 0F FF BF FF 2F FF BF FF 2F FF BF FF AF FF BF FF AF 02 00 00 30 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 AC 02 00 00 30 00 00 00 00)
+					objects[0005] = (008A): Face flags=45400000    u32_0=0000  u8_0=00 box=(-50,0,-40,50,0,40) key=002D u32_1=0000 u32_2=0000
+						surface = (0105): SurfacePlane dcIndices=[[75,4294967295]] u32_0=0000 u8_0=00
+						edges[0000] = (0106): Edge_D79AD3F3 flags=0000    u32_0=0000 points=[[50,0,40],[-50,0,40],[-50,0,-40],[50,0,-40]] lst1=(1,2,0,0,2,3) n=[[0,-1,0],[0,-1,0],[0,-1,0],[0,-1,0]] uv=[[-40,50],[-40,-50],[40,-50],[40,50]] a0=(103,000)  a1=(-1,1) aX=(02 00 00 30 08 00 00 00 08 00 00 00 00 00 00 00 FF BF FF AF FF BF FF AF FF BF FF 0F FF BF FF 0F FF BF FF 2F FF BF FF 2F FF BF FF 8F FF BF FF 8F 02 00 00 30 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 AC 02 00 00 30 00 00 00 00)
+				objects[0001] = (0023): 3dObject flags=20000000    u32_0=0000 
+					styles = (008B): ObjctStyles
+						styles[0000] = (0107): Style_LineColoru32_0=0000 Color.c0=#3F3F3FFF Color.diffuse=#333333FF Color.c1=#CCCCCCFF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=01
+					objects[0000] = (008C): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0,-40,-50,0,40) key=002E u32_1=0000 u32_2=0000
+						edges[0000] = (0108): Edge_6266D8CD flags=0000    u32_0=0000 points=[[-50,0,-40],[-50,0,40]] u8_0=00 a2=(-0,-1,-0) a3=(-0,-1,-0)
+					objects[0001] = (008D): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0,40,-50,0.3,40) key=002F u32_1=0000 u32_2=0000
+						edges[0000] = (0109): Edge_6266D8CD flags=0000    u32_0=0000 points=[[-50,0,40],[-50,0.3,40]] u8_0=00 a2=(0,-0,1) a3=(0,-0,1)
+					objects[0002] = (008E): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0.3,-40,-50,0.3,40) key=0030 u32_1=0000 u32_2=0000
+						edges[0000] = (010A): Edge_6266D8CD flags=0000    u32_0=0000 points=[[-50,0.3,-40],[-50,0.3,40]] u8_0=00 a2=(0,-1,0) a3=(0,-1,0)
+					objects[0003] = (008F): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0,-40,-50,0.3,-40) key=0031 u32_1=0000 u32_2=0000
+						edges[0000] = (010B): Edge_6266D8CD flags=0000    u32_0=0000 points=[[-50,0,-40],[-50,0.3,-40]] u8_0=00 a2=(0,-0,1) a3=(0,-0,1)
+					objects[0004] = (0090): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0,-40,50,0,-40) key=0032 u32_1=0000 u32_2=0000
+						edges[0000] = (010C): Edge_6266D8CD flags=0000    u32_0=0000 points=[[50,0,-40],[-50,0,-40]] u8_0=00 a2=(0,-1,0) a3=(0,-1,0)
+					objects[0005] = (0091): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0.3,-40,50,0.3,-40) key=0033 u32_1=0000 u32_2=0000
+						edges[0000] = (010D): Edge_6266D8CD flags=0000    u32_0=0000 points=[[50,0.3,-40],[-50,0.3,-40]] u8_0=00 a2=(-0,-1,-0) a3=(-0,-1,-0)
+					objects[0006] = (0092): Face flags=51000000    u32_0=0000  u8_0=00 box=(50,0,-40,50,0.3,-40) key=0034 u32_1=0000 u32_2=0000
+						edges[0000] = (010E): Edge_6266D8CD flags=0000    u32_0=0000 points=[[50,0,-40],[50,0.3,-40]] u8_0=00 a2=(-1,0,0) a3=(-1,0,0)
+					objects[0007] = (0093): Face flags=51000000    u32_0=0000  u8_0=00 box=(50,0,-40,50,0,40) key=0035 u32_1=0000 u32_2=0000
+						edges[0000] = (010F): Edge_6266D8CD flags=0000    u32_0=0000 points=[[50,0,40],[50,0,-40]] u8_0=00 a2=(0,-1,0) a3=(0,-1,0)
+					objects[0008] = (0094): Face flags=51000000    u32_0=0000  u8_0=00 box=(50,0.3,-40,50,0.3,40) key=0036 u32_1=0000 u32_2=0000
+						edges[0000] = (0110): Edge_6266D8CD flags=0000    u32_0=0000 points=[[50,0.3,40],[50,0.3,-40]] u8_0=00 a2=(0,-1,0) a3=(0,-1,0)
+					objects[0009] = (0095): Face flags=51000000    u32_0=0000  u8_0=00 box=(50,0,40,50,0.3,40) key=0037 u32_1=0000 u32_2=0000
+						edges[0000] = (0111): Edge_6266D8CD flags=0000    u32_0=0000 points=[[50,0,40],[50,0.3,40]] u8_0=00 a2=(0,0,-1) a3=(0,0,-1)
+					objects[000A] = (0096): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0,40,50,0,40) key=0038 u32_1=0000 u32_2=0000
+						edges[0000] = (0112): Edge_6266D8CD flags=0000    u32_0=0000 points=[[-50,0,40],[50,0,40]] u8_0=00 a2=(0,-1,0) a3=(0,-1,0)
+					objects[000B] = (0097): Face flags=51000000    u32_0=0000  u8_0=00 box=(-50,0.3,40,50,0.3,40) key=0039 u32_1=0000 u32_2=0000
+						edges[0000] = (0113): Edge_6266D8CD flags=0000    u32_0=0000 points=[[-50,0.3,40],[50,0.3,40]] u8_0=00 a2=(0,-1,0) a3=(0,-1,0)
+				objects[0002] = (0024): 3dObject flags=30000000    u32_0=0000 
+					styles = (0098): ObjctStyles
+			*shell = (0022): 3dObject
+			*wire = (0023): 3dObject
+			*ref4 = (0024): 3dObject
+			ref5 = (0025): 5194E9A2 flags=0000    u32_0=0000  u8_0=00 a0=Vector (0.0, 0.0, 0.0) a1=Vector (0.0, 0.0, 0.0)
+				*styles = (0084): ObjctStyles
+			ref6 = (0026): 5194E9A2 flags=0000    u32_0=0000  u8_0=00 a0=Vector (0.0, 0.0, 0.0) a1=Vector (0.0, 0.0, 0.0)
+				*styles = (008B): ObjctStyles
+			ref7 = (0027): 6A6931DCu32_0=0009 edges=[Line:(-500,0,-400)-(-500,0,400),Line:(-500,0,400)-(-500,3,400),Line:(-500,3,-400)-(-500,3,400),Line:(-500,0,-400)-(-500,3,-400),Line:(500,0,-400)-(-500,0,-400),Line:(500,3,-400)-(-500,3,-400),Line:(500,0,-400)-(500,3,-400),Line:(500,0,400)-(500,0,-400),Line:(500,3,400)-(500,3,-400),Line:(500,0,400)-(500,3,400),Line:(-500,0,400)-(500,0,400),Line:(-500,3,400)-(500,3,400)] points=[] p1=Vector (-50.00000001, -1e-08, -40.00000001000001) p2=Vector (50.00000001000003, 0.30000001000000004, 40.00000001000001)
+		items[0008] = (000D): 0DE8E459 u32_0=0000  u8_0=01   u32_1=0001 a3=Vector (0.0, 0.0, 0.0) u32_2=0006
+			attrs = (0028): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (0099): Attr_0270FFC7u32_0=0001 u8_0=00 u32_1=0000  u8_1=00 u8_2=00
+			lst0[0000] = (0029): 3DA2C291 u32_0=0000  u8_0=01    u32_1=0000 a2=(21,84,DE,7B)
+				attrs = (009A): Attributesu32_0=0000 u8_0=00 
+					attributes[0000] = (0114): Attr_189725D1u32_0=FFFFFFFF u8_0=00 u32_1=0000  u8_1=01 u16_0=000
+				ref_1 = (009B): 3dObject flags=0000    u32_0=0000 
+					styles = (0115): ObjctStyles
+						styles[0000] = (0155): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+						styles[0001] = (0156): Style_B32BF6A5u32_0=0005 u16_0=032
+						styles[0002] = (0157): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (0.0, 0.0, 0.0) f64_1=1 u32_1=0000
+			lst0[0001] = (002A): 6C8A5C53 u32_0=0000  u8_0=01    u32_1=0002 a4=(0,0,0,2,2,0) transformation= transformation={a0=|+000|0+00|00+0|000+| m=[[1, 0, 0, 0],[0, 1, 0, 0],[0, 0, 1, 0],[0, 0, 0, 10]]}
+				attrs = (009C): Attributesu32_0=0000 u8_0=00 
+					attributes[0000] = (0116): Attr_189725D1u32_0=FFFFFFFF u8_0=00 u32_1=0000  u8_1=01 u16_0=000
+				ref_1 = (009D): 3dObject flags=0000    u32_0=0000 
+					styles = (0117): ObjctStyles
+						styles[0000] = (0158): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+						styles[0001] = (0159): Style_B32BF6A5u32_0=0003 u16_0=014
+						styles[0002] = (015A): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (0.0, 0.0, 0.0) f64_1=1 u32_1=0000
+			lst0[0002] = (002B): 6C8A5C53 u32_0=0000  u8_0=01    u32_1=0004 a4=(0,0,0,2,2,0) transformation= transformation={a0=|00+0|0+00|+000|000+| m=[[0, 0, 1, 0],[0, 1, 0, 0],[1, 0, 0, 0],[0, 0, 0, 10]]}
+				attrs = (009E): Attributesu32_0=0000 u8_0=00 
+					attributes[0000] = (0118): Attr_189725D1u32_0=FFFFFFFF u8_0=00 u32_1=0000  u8_1=01 u16_0=000
+				ref_1 = (009F): 3dObject flags=0000    u32_0=0000 
+					styles = (0119): ObjctStyles
+						styles[0000] = (015B): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+						styles[0001] = (015C): Style_B32BF6A5u32_0=0003 u16_0=014
+						styles[0002] = (015D): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (0.0, 0.0, 0.0) f64_1=1 u32_1=0000
+			lst0[0003] = (002C): 6C8A5C53 u32_0=0000  u8_0=01    u32_1=0008 a4=(0,0,0,2,2,0) transformation= transformation={a0=|+000|00+0|0+00|000+| m=[[1, 0, 0, 0],[0, 0, 1, 0],[0, 1, 0, 0],[0, 0, 0, 10]]}
+				attrs = (00A0): Attributesu32_0=0000 u8_0=00 
+					attributes[0000] = (011A): Attr_189725D1u32_0=FFFFFFFF u8_0=00 u32_1=0000  u8_1=01 u16_0=000
+				ref_1 = (00A1): 3dObject flags=0000    u32_0=0000 
+					styles = (011B): ObjctStyles
+						styles[0000] = (015E): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+						styles[0001] = (015F): Style_B32BF6A5u32_0=0003 u16_0=014
+						styles[0002] = (0160): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (0.0, 0.0, 0.0) f64_1=1 u32_1=0000
+			object3D = (002D): 3dObject flags=0000    u32_0=0000 
+				styles = (00A2): ObjctStyles
+					styles[0000] = (011C): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+					styles[0001] = (011D): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (0.0, 0.0, 0.0) f64_1=1 u32_1=0000
+					styles[0002] = (011E): Style_B32BF6ABu32_0=0001 u8_0=00
+					styles[0003] = (011F): Style_LineColoru32_0=0002 Color.c0=#00000000 Color.diffuse=#FFFFFF7F Color.c1=#FFFFFF7F Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=00
+		items[0009] = (000E): Sketch2D u32_0=0002  u8_0=01   u8_1=01 index=000A transformation= transformation={a0=|-000|00+0|0+00|000+| m=[[-1, 0, 0, 0],[0, 0, 1, 0],[0, 1, 0, 0],[0, 0, 0, 10]]}   u8_2=01  S32_0=4 s32_1=14
+			attrs = (002E): Attributesu32_0=0000 u8_0=00 
+				attributes[0000] = (00A3): Attr_0244393Cu32_0=0000 u8_0=00 u32_1=000A
+				attributes[0001] = (00A4): Attr_189725D1u32_0=0004 u8_0=00 u32_1=0000  u8_1=00 u16_0=000
+			obj = (002F): 3dObject flags=0000    u32_0=0004 
+				styles = (00A5): ObjctStyles
+					styles[0000] = (0120): Style_8F0B160Cu32_0=0001 a0=(001,000,3F80,001,FFFF,000,000,000,000,000) u8_0=00 a1=(3F80,000,000) a2=(000,000,00F,000) u32_1=0002
+					styles[0001] = (0121): Style_8F0B160Bu32_0=0001 Color.c0=#00000000 Color.diffuse=#333333FF Color.c1=#CCCCCCFF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=01 a11=(010,000,000,000,000,000,000,000,000,000)
+					styles[0002] = (0122): Style_B32BF6A5u32_0=0001 u16_0=003
+				objects[0000] = (003A): Line3D flags=0028    u32_0=0000 pos=Vector (50.0, 40.0, 0.0) dir=Vector (-50.00000000000002, -40.00000000000001, 0.0)
+					styles = (00BB): ObjctStyles
+						*styles[0000] = (0128): Style_8F0B160C
+						*styles[0001] = (0129): Style_8F0B160B
+					numRef = (00BC): IndexDef_1 index=0015 u8_1=00
+				objects[0001] = (0039): Line3D flags=0027    u32_0=0000 pos=Vector (-49.99999999999999, 40.0, 0.0) dir=Vector (49.99999999999999, -39.99999999999999, 0.0)
+					styles = (00B9): ObjctStyles
+						styles[0000] = (0128): Style_8F0B160Cu32_0=0001 a0=(000,000,3F80,003,AAAA,000,000,000,000,000) u8_0=00 a1=(3F80,000,000) a2=(000,000,00F,000) u32_1=0001
+						styles[0001] = (0129): Style_8F0B160Bu32_0=0001 Color.c0=#00000000 Color.diffuse=#333333FF Color.c1=#CCCCCCFF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=01 a11=(014,000,000,000,000,000,000,000,000,000)
+					numRef = (00BA): IndexDef_1 index=0014 u8_1=00
+				objects[0002] = (0038): Line3D flags=001A    u32_0=0000 pos=Vector (-50.00000000000002, -40.00000000000001, 0.0) dir=Vector (-49.99999999999999, 40.0, 0.0)
+					styles = (00B7): ObjctStyles
+						*styles[0000] = (0127): Style_8F0B160B
+					numRef = (00B8): IndexDef_1 index=0013 u8_1=00
+				objects[0003] = (0037): Line3D flags=0019    u32_0=0000 pos=Vector (49.99999999999999, -39.99999999999999, 0.0) dir=Vector (-50.00000000000002, -40.00000000000001, 0.0)
+					styles = (00B5): ObjctStyles
+						*styles[0000] = (0127): Style_8F0B160B
+					numRef = (00B6): IndexDef_1 index=0012 u8_1=00
+				objects[0004] = (0036): Line3D flags=0018    u32_0=0000 pos=Vector (50.0, 40.0, 0.0) dir=Vector (49.99999999999999, -39.99999999999999, 0.0)
+					styles = (00B3): ObjctStyles
+						*styles[0000] = (0127): Style_8F0B160B
+					numRef = (00B4): IndexDef_1 index=0011 u8_1=00
+				objects[0005] = (0035): Line3D flags=0017    u32_0=0000 pos=Vector (-49.99999999999999, 40.0, 0.0) dir=Vector (50.0, 40.0, 0.0)
+					styles = (00B1): ObjctStyles
+						*styles[0000] = (0127): Style_8F0B160B
+					numRef = (00B2): IndexDef_1 index=0010 u8_1=00
+				objects[0006] = (0034): Point3D flags=0016    u32_0=0000 pos=Vector (-50.00000000000002, -40.00000000000001, 0.0) f32_0=4 s32_0=-1 u16_0=000
+					styles = (00AF): ObjctStyles
+						*styles[0000] = (0126): Style_Visibility
+						*styles[0001] = (0127): Style_8F0B160B
+					numRef = (00B0): IndexDef_2 index=000F
+				objects[0007] = (0033): Point3D flags=0015    u32_0=0000 pos=Vector (50.0, 40.0, 0.0) f32_0=4 s32_0=-1 u16_0=000
+					styles = (00AD): ObjctStyles
+						*styles[0000] = (0126): Style_Visibility
+						*styles[0001] = (0127): Style_8F0B160B
+					numRef = (00AE): IndexDef_2 index=000E
+				objects[0008] = (0032): Point3D flags=0014    u32_0=0000 pos=Vector (49.99999999999999, -39.99999999999999, 0.0) f32_0=4 s32_0=-1 u16_0=000
+					styles = (00AB): ObjctStyles
+						*styles[0000] = (0126): Style_Visibility
+						*styles[0001] = (0127): Style_8F0B160B
+					numRef = (00AC): IndexDef_2 index=000D
+				objects[0009] = (0031): Point3D flags=0013    u32_0=0000 pos=Vector (-49.99999999999999, 40.0, 0.0) f32_0=4 s32_0=-1 u16_0=000
+					styles = (00A9): ObjctStyles
+						styles[0000] = (0126): Style_Visibilityu32_0=0001 visible=False
+						styles[0001] = (0127): Style_8F0B160Bu32_0=0001 Color.c0=#00000000 Color.diffuse=#333333FF Color.c1=#CCCCCCFF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=01 a11=(011,000,000,000,000,000,000,000,000,000)
+					numRef = (00AA): IndexDef_2 index=000C
+				objects[000A] = (0030): Point3D flags=0011    u32_0=0000 pos=Vector (0.0, 0.0, 0.0) f32_0=4 s32_0=-1 u16_0=000
+					styles = (00A7): ObjctStyles
+						styles[0000] = (0124): Style_B32BF6A5u32_0=0001 u16_0=002
+						styles[0001] = (0125): Style_8F0B160Bu32_0=0001 Color.c0=#00000000 Color.diffuse=#333333FF Color.c1=#CCCCCCFF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=01 a11=(02C,000,000,000,000,000,000,000,000,000)
+					numRef = (00A8): IndexDef_2 index=000B
+				objects[000B] = (00A6): 3dObject flags=0001    u32_0=0000 
+					styles = (0123): ObjctStyles
+					objects[0000] = (003B): DimensioningLength flags=0000    u32_0=0000  u8_0=00 u32_1=0001 index=0016 u8_1=01
+						styles = (00BD): ObjctStyles
+							styles[0000] = (012A): Style_8F0B160Bu32_0=0001 Color.c0=#00000000 Color.diffuse=#333333FF Color.c1=#CCCCCCFF Color.c2=#FFFFFFFF Color.c3=#000000FF Color.f=20 u8_0=01 a11=(016,000,000,000,000,000,000,000,000,000)
+							styles[0001] = (012B): Style_8F0B160Cu32_0=0001 a0=(001,000,3F80,001,FFFF,000,000,000,000,000) u8_0=00 a1=(3F80,000,000) a2=(000,000,00F,000) u32_1=0001
+							styles[0002] = (012C): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+						numRef = (00BE): RefByKey_1 key=0016
+						*parent = (00A6): 3dObject
+						lst0[0000] = (00BF): 3dObject flags=0000    u32_0=0000 
+							styles = (012D): ObjctStyles
+								styles[0000] = (0161): Style_C29D5C11u32_0=0001 a0=Vector (169.58398175579464, -87.9152542251862, 0.0)
+								styles[0001] = (0162): Style_B32BF6A7u32_0=0001 f64_0=30 vec=Vector (169.58398175579464, -87.9152542251862, 0.0) f64_1=1 u32_1=0000
+							*numRef = (00BE): RefByKey_1
+							objects[0000] = (012E): Text3D '800' flags=0000    u32_0=0001 vec=Vector (169.24629938942348, -88.06525423952857, 0.0) a0=Vector (1.0, 0.0, 0.0) a1=(009,A7F9,000) b_0=False
+								*numRef = (00BE): RefByKey_1
+						lst0[0001] = (00C0): 3dObject flags=0000    u32_0=0000 
+							styles = (012F): ObjctStyles
+								styles[0000] = (0163): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (169.58398175579464, -39.99999999999998, 0.0) f64_1=1 u32_1=0000
+							*numRef = (00BE): RefByKey_1
+							objects[0000] = (0130): Line3D flags=0000    u32_0=0000 pos=Vector (169.53398175579463, -39.74999999999998, 0.0) dir=Vector (169.58398175579464, -39.99999999999998, 0.0)
+								*numRef = (00BE): RefByKey_1
+							objects[0001] = (0131): Line3D flags=0000    u32_0=0000 pos=Vector (169.58398175579464, -39.99999999999998, 0.0) dir=Vector (169.63398175579465, -39.74999999999998, 0.0)
+								*numRef = (00BE): RefByKey_1
+							objects[0002] = (0132): Line3D flags=0000    u32_0=0000 pos=Vector (169.63398175579465, -39.74999999999998, 0.0) dir=Vector (169.53398175579463, -39.74999999999998, 0.0)
+								*numRef = (00BE): RefByKey_1
+						lst0[0002] = (00C1): 3dObject flags=0000    u32_0=0000 
+							styles = (0133): ObjctStyles
+								styles[0000] = (0164): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (169.58398175579464, 40.00000000000002, 0.0) f64_1=1 u32_1=0000
+							*numRef = (00BE): RefByKey_1
+							objects[0000] = (0134): Line3D flags=0000    u32_0=0000 pos=Vector (169.63398175579465, 39.75000000000002, 0.0) dir=Vector (169.58398175579464, 40.00000000000002, 0.0)
+								*numRef = (00BE): RefByKey_1
+							objects[0001] = (0135): Line3D flags=0000    u32_0=0000 pos=Vector (169.58398175579464, 40.00000000000002, 0.0) dir=Vector (169.53398175579463, 39.75000000000002, 0.0)
+								*numRef = (00BE): RefByKey_1
+							objects[0002] = (0136): Line3D flags=0000    u32_0=0000 pos=Vector (169.53398175579463, 39.75000000000002, 0.0) dir=Vector (169.63398175579465, 39.75000000000002, 0.0)
+								*numRef = (00BE): RefByKey_1
+						lst0[0003] = (00C2): Line3D flags=0004    u32_0=0000 pos=Vector (169.58398175579464, -39.99999999999998, 0.0) dir=Vector (169.58398175579464, 40.00000000000002, 0.0)
+							*numRef = (00BE): RefByKey_1
+						lst0[0004] = (00C3): Line3D flags=0006    u32_0=0000 pos=Vector (52.47166200978594, -39.99999999999999, 0.0) dir=Vector (179.47062979493842, -39.99999999999998, 0.0)
+							*numRef = (00BE): RefByKey_1
+						lst0[0005] = (00C4): Line3D flags=0007    u32_0=0000 pos=Vector (52.47166200978595, 40.0, 0.0) dir=Vector (179.4706297949384, 40.000000000000014, 0.0)
+							*numRef = (00BE): RefByKey_1
+						lst0[0006] = (00C5): Line3D flags=0004    u32_0=0000 pos=Vector (169.58398175579464, -39.99999999999998, 0.0) dir=Vector (169.58398175579464, -87.9152542251862, 0.0)
+							*numRef = (00BE): RefByKey_1
+					objects[0001] = (003C): DimensioningLength flags=0000    u32_0=0000  u8_0=00 u32_1=0001 index=0017 u8_1=01
+						styles = (00C6): ObjctStyles
+							*styles[0000] = (012A): Style_8F0B160B
+							*styles[0001] = (012B): Style_8F0B160C
+							styles[0002] = (0137): Style_7AE0E1A3u32_0=0001 a0=Vector (0.0, 0.1, 0.0)
+						numRef = (00C7): RefByKey_1 key=0017
+						*parent = (00A6): 3dObject
+						lst0[0000] = (00C8): 3dObject flags=0000    u32_0=0000 
+							styles = (0138): ObjctStyles
+								styles[0000] = (0165): Style_C29D5C11u32_0=0001 a0=Vector (-21.588878223996844, -112.13789154248093, 0.0)
+								styles[0001] = (0166): Style_B32BF6A7u32_0=0001 f64_0=30 vec=Vector (-21.588878223996844, -112.13789154248093, 0.0) f64_1=1 u32_1=0000
+							*numRef = (00C7): RefByKey_1
+							objects[0000] = (0139): Text3D '1000' flags=0000    u32_0=0001 vec=Vector (-22.039121369224276, -112.28776999245179, 0.0) a0=Vector (1.0, 0.0, 0.0) a1=(009,A7F9,000) b_0=False
+								*numRef = (00C7): RefByKey_1
+						lst0[0001] = (00C9): 3dObject flags=0000    u32_0=0000 
+							styles = (013A): ObjctStyles
+								styles[0000] = (0167): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (-50.00000000000004, -112.13789154248092, 0.0) f64_1=1 u32_1=0000
+							*numRef = (00C7): RefByKey_1
+							objects[0000] = (013B): Line3D flags=0000    u32_0=0000 pos=Vector (-49.75000000000004, -112.08789154248092, 0.0) dir=Vector (-50.00000000000004, -112.13789154248092, 0.0)
+								*numRef = (00C7): RefByKey_1
+							objects[0001] = (013C): Line3D flags=0000    u32_0=0000 pos=Vector (-50.00000000000004, -112.13789154248092, 0.0) dir=Vector (-49.75000000000004, -112.18789154248091, 0.0)
+								*numRef = (00C7): RefByKey_1
+							objects[0002] = (013D): Line3D flags=0000    u32_0=0000 pos=Vector (-49.75000000000004, -112.18789154248091, 0.0) dir=Vector (-49.75000000000004, -112.08789154248092, 0.0)
+								*numRef = (00C7): RefByKey_1
+						lst0[0002] = (00CA): 3dObject flags=0000    u32_0=0000 
+							styles = (013E): ObjctStyles
+								styles[0000] = (0168): Style_B32BF6A7u32_0=0001 f64_0=50 vec=Vector (49.99999999999997, -112.13789154248094, 0.0) f64_1=1 u32_1=0000
+							*numRef = (00C7): RefByKey_1
+							objects[0000] = (013F): Line3D flags=0000    u32_0=0000 pos=Vector (49.74999999999997, -112.18789154248094, 0.0) dir=Vector (49.99999999999997, -112.13789154248094, 0.0)
+								*numRef = (00C7): RefByKey_1
+							objects[0001] = (0140): Line3D flags=0000    u32_0=0000 pos=Vector (49.99999999999997, -112.13789154248094, 0.0) dir=Vector (49.74999999999997, -112.08789154248095, 0.0)
+								*numRef = (00C7): RefByKey_1
+							objects[0002] = (0141): Line3D flags=0000    u32_0=0000 pos=Vector (49.74999999999997, -112.08789154248095, 0.0) dir=Vector (49.74999999999997, -112.18789154248094, 0.0)
+								*numRef = (00C7): RefByKey_1
+						lst0[0003] = (00CB): Line3D flags=0004    u32_0=0000 pos=Vector (-50.00000000000004, -112.13789154248092, 0.0) dir=Vector (49.99999999999997, -112.13789154248094, 0.0)
+							*numRef = (00C7): RefByKey_1
+						lst0[0004] = (00CC): Line3D flags=0006    u32_0=0000 pos=Vector (-50.00000000000002, -41.3297807997162, 0.0) dir=Vector (-50.00000000000004, -117.45701474134566, 0.0)
+							*numRef = (00C7): RefByKey_1
+						lst0[0005] = (00CD): Line3D flags=0007    u32_0=0000 pos=Vector (49.99999999999999, -41.32978079971619, 0.0) dir=Vector (49.99999999999997, -117.4570147413457, 0.0)
+							*numRef = (00C7): RefByKey_1
+			*lst1[000B] = (0030): Point3D - (0,0,0)
+			*lst1[000C] = (0031): Point3D - (-50,40,0)
+			*lst1[000D] = (0032): Point3D - (50,-40,0)
+			*lst1[000E] = (0033): Point3D - (50,40,0)
+			*lst1[000F] = (0034): Point3D - (-50,-40,0)
+			*lst1[0010] = (0035): Line3D (-50,40,0)-(7.10543e-15,80,0)
+			*lst1[0011] = (0036): Line3D (50,40,0)-(100,7.10543e-15,0)
+			*lst1[0012] = (0037): Line3D (50,-40,0)-(-2.84217e-14,-80,0)
+			*lst1[0013] = (0038): Line3D (-50,-40,0)-(-100,-7.10543e-15,0)
+			*lst1[0014] = (0039): Line3D (-50,40,0)-(0,7.10543e-15,0)
+			*lst1[0015] = (003A): Line3D (50,40,0)-(-2.13163e-14,-7.10543e-15,0)
+			*lst2[0016] = (003B): DimensioningLength
+			*lst2[0017] = (003C): DimensioningLength
+		outlines[004B] = (000F): OutlineSingleFx a0=(000,000) index=0018 box=(-50,-1e-08,-40,50,0.3,40) edges=[Line:(-500,0,-400)-(-500,0,400),Line:(-500,0,400)-(-500,3,400),Line:(-500,3,-400)-(-500,3,400),Line:(-500,0,-400)-(-500,3,-400),Line:(500,0,-400)-(-500,0,-400),Line:(500,3,-400)-(-500,3,-400),Line:(500,0,-400)-(500,3,-400),Line:(500,0,400)-(500,0,-400),Line:(500,3,400)-(500,3,-400),Line:(500,0,400)-(500,3,400),Line:(-500,0,400)-(500,0,400),Line:(-500,3,400)-(500,3,400)] points=[]
+(0169): 3dObject flags=0000    u32_0=0000 
+	styles = (016D): ObjctStyles
+		styles[0000] = (0171): Style_B32BF6A9u32_0=0001 u16_1=000
+	objects[0000] = (016A): 3dObject flags=10000000    u32_0=0000 
+		styles = (016E): ObjctStyles
+			styles[0000] = (0172): Style_Solidu32_0=0001 solid=True
+	objects[0001] = (016B): 3dObject flags=20000000    u32_0=0000 
+		styles = (016F): ObjctStyles
+	objects[0002] = (016C): 3dObject flags=30000000    u32_0=0000 
+		styles = (0170): ObjctStyles
