@@ -1,12 +1,13 @@
 # Cartesian Robots Digital Twin
 
-Master's degree project.
+Master's degree project. Functional pair of robots with digital twin made in FreeCAD. Repository consist all elements to build and program hardware and software.
 
 <p align="center">
     <img src="img.png" width="400"/>
 </p>
 
 ## Contents
+
 1. digitalTwin - FreeCAD project containing simplified models of robots with calculations,
 2. documentation - 2D documentation of robots,
 3. electronics - electronics schematic with designed board in KiCAD; used to connect motors with Arduino,
@@ -15,7 +16,8 @@ Master's degree project.
 
 ## License
 
-Read LICENSE.md
+SOFTWARE: MIT
+HARDWARE: CERN OHL v2, unless specified below
 
 Igus® parts:
 https://www.igus.eu/info/company-terms-and-conditions-de#section_15
