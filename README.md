@@ -1,6 +1,6 @@
 # Cartesian Robots Digital Twin
 
-Master's degree project. Functional pair of robots with digital twin made in FreeCAD. Repository consist all elements to build and program hardware and software.
+Master's degree project. Functional pair of robots with digital twin made in FreeCAD. Repository consist all elements to build robots, program controllers and run software.
 
 <p align="center">
     <img src="img.png" width="400"/>
